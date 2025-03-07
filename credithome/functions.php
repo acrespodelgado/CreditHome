@@ -92,3 +92,15 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+/**
+ * Menú en footer
+ */
+function register_my_menus() {
+    register_nav_menus(
+        array(
+            'footer-menu' => __('Menu Footer'),
+        )
+    );
+}
+add_action('init', 'register_my_menus');
