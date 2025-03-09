@@ -16,6 +16,12 @@ a {
     }
 }
 
+.blur {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+
 /*
  ** Viviendas
 */ 
@@ -41,6 +47,114 @@ a {
         font-size: 48px;
         font-weight: 300;
         color: $accent;
+    }
+    .vivienda-card {
+        a {
+            opacity: 1;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        .img-container {
+            position: relative;
+            .location {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 1;
+                padding: 0px 15px;
+                border: 1px solid $transparent-white;
+                border-radius: 32px;
+                i {
+                    font-size: 16px;
+                    color: $accent;
+                    margin-right: 10px;
+                }
+                span {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $white;
+                }
+            }
+            img {
+                border-radius: 16px;
+            }
+            .price {
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%); // Centra horizontal
+                z-index: 1;
+                padding: 0px 20px;
+                border: 1px solid $transparent-white;
+                border-radius: 32px;
+                span {
+                    font-size: 19px;
+                    font-weight: bold;
+                    color: $white;
+                }
+            }
+        }
+        .data {
+            margin: -1.25rem 0.75rem 0 0.75rem;
+            padding: 3rem 1rem 1.5rem 1rem;
+            border: 1px solid $accent;
+            border-top: 0px;
+            border-radius: 16px;
+            background: $grey;
+            h4 {
+                font-size: 24px;
+                font-weight: 400;
+                color: $white;
+                text-align: center;
+            }
+            ul {
+                display: grid;
+                grid-auto-flow: column;
+                grid-gap: 20px;
+                align-items: start;
+                justify-content: center;
+                
+                li {
+                    display: grid;
+                    grid-template-rows: auto auto; // Una fila para el icono, otra para el texto
+                    justify-items: center;
+                    gap: 8px;
+                    
+                    .img-wrapper {
+                        padding: 2px 12px;
+                        background: $grey;
+                        border: 1px solid $transparent-white;
+                        border-radius: 12px;
+                        img {
+                            width: 24px; // Asegura que todos los iconos tengan el mismo tamaño
+                            height: 24px;
+                            object-fit: contain;
+                        }
+                    }
+                    
+                    span {
+                        display: block;
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 300;
+                        color: $white;
+                    }
+                }
+            }
+            .separator {
+                border: 0;
+                height: 2px;
+                background: $accent;
+                margin: 15px 0;
+            }
+            p {
+                text-align: center;
+                font-size: 14px;
+                font-weight: 300;
+                color: $transparent-white;
+            }
+        }
     }
 }
 

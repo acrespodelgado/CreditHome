@@ -14982,6 +14982,12 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+.blur {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
 /*
  ** Viviendas
 */
@@ -15007,6 +15013,110 @@ a:hover {
   font-size: 48px;
   font-weight: 300;
   color: #BCA76F;
+}
+#viviendas .vivienda-card a {
+  opacity: 1;
+}
+#viviendas .vivienda-card a:hover {
+  opacity: 0.7;
+}
+#viviendas .vivienda-card .img-container {
+  position: relative;
+}
+#viviendas .vivienda-card .img-container .location {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  padding: 0px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.63);
+  border-radius: 32px;
+}
+#viviendas .vivienda-card .img-container .location i {
+  font-size: 16px;
+  color: #BCA76F;
+  margin-right: 10px;
+}
+#viviendas .vivienda-card .img-container .location span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFF;
+}
+#viviendas .vivienda-card .img-container img {
+  border-radius: 16px;
+}
+#viviendas .vivienda-card .img-container .price {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 0px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.63);
+  border-radius: 32px;
+}
+#viviendas .vivienda-card .img-container .price span {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFF;
+}
+#viviendas .vivienda-card .data {
+  margin: -1.25rem 0.75rem 0 0.75rem;
+  padding: 3rem 1rem 1.5rem 1rem;
+  border: 1px solid #BCA76F;
+  border-top: 0px;
+  border-radius: 16px;
+  background: #171717;
+}
+#viviendas .vivienda-card .data h4, #viviendas .vivienda-card .data .h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFF;
+  text-align: center;
+}
+#viviendas .vivienda-card .data ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  align-items: start;
+  justify-content: center;
+}
+#viviendas .vivienda-card .data ul li {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  gap: 8px;
+}
+#viviendas .vivienda-card .data ul li .img-wrapper {
+  padding: 2px 12px;
+  background: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.63);
+  border-radius: 12px;
+}
+#viviendas .vivienda-card .data ul li .img-wrapper img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+#viviendas .vivienda-card .data ul li span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFF;
+}
+#viviendas .vivienda-card .data .separator {
+  border: 0;
+  height: 2px;
+  background: #BCA76F;
+  margin: 15px 0;
+}
+#viviendas .vivienda-card .data p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.63);
 }
 
 /*
