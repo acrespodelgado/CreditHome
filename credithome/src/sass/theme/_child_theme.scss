@@ -7,11 +7,11 @@
 }
 
 a {
-    opacity: 0.63;
+    opacity: 1;
     transition: all 0.3s ease-in;
     text-decoration: none;
     &:hover {
-        opacity: 1;
+        opacity: 0.63;
         transition: all 0.3s ease-in-out;
     }
 }
@@ -22,39 +22,384 @@ a {
     backdrop-filter: blur(12px);
 }
 
+.left {
+    position: absolute;
+    left: 0;
+    padding: 2rem 1rem;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: left top;
+    border-bottom: 1px solid $primary;
+    text-align: center;
+}
+
+.gold {
+    color: $accent;
+}
+
+.dark-gold {
+    color: $dark-gold;
+}
+
+@mixin container-padding {
+    @each $name, $values in $breakpoints {
+        $breakpoint: map-get($values, point);
+        $container-width: map-get($values, container);
+        
+        @media (min-width: #{$breakpoint}) {
+            @if $breakpoint == 1920px {
+                padding-left: calc((1920px - #{$container-width}) / 2);
+            } @else {
+                padding-left: calc((100vw - #{$container-width}) / 2);
+            }
+        }
+    }
+}
+
+/*
+ ** Sliders
+*/ 
+
+// Home
+
+.n2-ss-layer {
+
+    .cover {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        opacity: 0.61;
+        z-index: 2;
+    }
+
+    .home-slider {
+
+        h2 {
+            font-size: 24px;
+            font-weight: 400;
+            color: $accent;
+            line-height: 0.85;
+        }
+    
+        h1 {
+            font-size: 64px;
+            font-weight: 400;
+            color: $white;
+            line-height: 0.85;
+            margin-bottom: 2rem;
+        }
+    
+        p {
+            max-width: 40%;
+            font-size: 18px;
+            font-weight: 400;
+            color: $accent;
+            line-height: 1.25;
+        }
+    }
+    
+    .nums {
+        font-family: "Barlow", sans-serif;
+
+        span {
+            font-size: 72px;
+            font-weight: bold;
+            color: $accent;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
+            margin: 2rem 0;
+        }
+
+        a {
+            font-size: 14px;
+            font-weight: 300;
+            color: $white;
+            border: 1px solid $white;
+            border-radius: 32px;
+            padding: 10px 30px;
+        }
+    }
+}
+
+/*
+ ** Plan Home
+*/
+
+#plan {
+    position: relative;
+    background: $light;
+    padding: 5rem 0;
+    height: 700px;
+
+    .left {
+        width: 700px;
+        top: 0;
+    }
+
+    h3 {
+        font-size: 48px;
+        font-weight: 400;
+        color: $primary;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: 400;
+        color: $primary;
+    }
+
+    a.btn {
+        font-size: 14px;
+        font-weight: 400;
+        color: $primary;
+        padding: 10px 30px;
+        border: 1px solid $accent;
+        border-radius: 32px;
+
+        &:hover {
+            background: $dark-gold;
+            color: $white;
+        }
+    }
+}
+
+/*
+ ** Servicios Home
+*/
+
+#servicios-home {
+    .shadow {
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%; // Usamos 100% para que cubra toda la altura
+            background: linear-gradient(to bottom, 
+                rgba(0, 0, 0, 0) 0%,    // Completamente transparente arriba
+                rgba(0, 0, 0, 1) 100%   // Negro sólido abajo
+            );
+            pointer-events: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .col-md-3 {
+            position: relative;
+
+            .icono {
+                width: 100%;
+                height: 120px;
+                padding: 10px 15px;
+                position: absolute;
+                bottom: 20%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                z-index: 2;
+
+                .blur {
+                    margin: 0 auto;
+                    border: 1px solid $transparent-white;
+                    border-radius: 16px;
+                    padding: 10px 25px;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                h5 {
+                    font-size: 32px;
+                    font-weight: 400;
+                    color: $white;
+                    margin-top: 2rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .black-section {
+        background: $black;
+        padding: 3rem 0;
+
+        h4 {
+            font-size: 32px;
+            font-weight: 400;
+            color: $white;
+        }
+
+        p {
+            font-size: 17px;
+            font-weight: 400;
+            color: $white;
+        }
+
+        a.btn {
+            background: $transparent;
+            border: 1px solid $accent;
+            border-radius: 32px;
+            font-size: 14px;
+            font-weight: 300;
+            color: $white;
+            padding: 10px 30px;
+            
+            &:hover {
+                background: $accent;
+                color: $primary;
+            }
+        }
+    }
+}
+
+/*
+ ** Opiniones
+*/
+
+#opiniones {
+    height: $carousel-height;
+    position: relative;
+
+    .left {
+        width: $carousel-height;
+    }
+
+    .right {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        span {
+            font-size: 14px;
+            font-weight: 300;
+            color: $primary;
+        }
+    }
+
+    #opinionCarousel {
+        position: relative;
+        height: $carousel-height;
+        margin: 0 auto;
+        padding: 2rem 0;
+
+        h4 {
+            font-size: 21px;
+            font-weight: bold;
+            color: $primary;
+        }
+
+        p {
+            max-width: 65%;
+            font-size: 18px;
+            font-weight: 400;
+            color: $primary;
+            margin: auto;
+        }
+
+        .stars {
+            .fa {
+                color: $accent;
+                margin: 0 5px;
+            }
+        }
+
+        .carousel-inner {
+            min-height: $carousel-height - 100px; // Ajusta esta altura según necesites
+        }
+    
+        .carousel-item {
+            height: 100%;
+
+            .carousel-item-inner {
+                min-height: $carousel-height - 100px; // La misma altura que carousel-inner
+                margin: 0 auto;
+            }
+            &.active,
+            &-next,
+            &-prev {
+                display: flex;
+            }
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;  // Ancho fijo del botón
+            height: 40px; // Alto fijo del botón
+            font-size: 24px;
+            color: $primary;
+            border: 1px solid $primary;
+            border-radius: 50%;
+            opacity: 1;
+            
+            // Centrar el icono dentro del botón
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: $primary;
+                color: white;
+            }
+        }
+
+        // Ajustar posición específica para cada botón
+        .carousel-control-prev {
+            left: 0;
+        }
+
+        .carousel-control-next {
+            right: 0;
+        }
+    }
+}
+
 /*
  ** Viviendas
 */ 
 
 #viviendas {
     background: $primary;
+
     h3 {
         font-size: 24px;
         font-weight: 400;
         color: $white;
     }
+
     h4 {
         font-size: 18px;
         font-weight: 300;
         color: $accent;
     }
+
     p {
         font-size: 14px;
         font-weight: 300;
         color: $white;
     }
+
     span {
         font-size: 48px;
         font-weight: 300;
         color: $accent;
     }
+
     .vivienda-card {
-        a {
-            opacity: 1;
-            &:hover {
-                opacity: 0.7;
-            }
-        }
         .img-container {
             position: relative;
             .location {
@@ -156,6 +501,15 @@ a {
             }
         }
     }
+    .btn-dark {
+        background: $grey;
+        padding: 15px 30px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $white;
+        border: 1px solid $accent;
+        border-radius: 32px;
+    }
 }
 
 /*
@@ -177,6 +531,12 @@ a {
     h5 {
         font-size: 14px;
         font-weight: bold;
+    }
+
+    .col-lg-7 {
+        .container {
+            @include container-padding;
+        }
     }
 
     .btn-form {
@@ -275,7 +635,7 @@ a {
             
             &::placeholder {
                 color: $dark-gold;
-                opacity: 0.7;
+                opacity: 0.63;
             }
         }
     
@@ -333,6 +693,10 @@ a {
                 font-size: 16px;
                 font-weight: 400;
                 color: $white;
+                opacity: 0.63;
+                &:hover {
+                    opacity: 1;
+                }
             }
             h2 {
                 font-size: 36px;
@@ -361,6 +725,14 @@ a {
             }
             &:first-child {
                 border-bottom: 1px solid $white;
+            }
+            ul.list-group-horizontal {
+                a {
+                    opacity: 1;
+                    &:hover {
+                        opacity: 0.63;
+                    }
+                }
             }
             &#copyright {
                 padding: 2rem 0 !important;

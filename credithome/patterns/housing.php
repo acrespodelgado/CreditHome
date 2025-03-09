@@ -14,8 +14,8 @@
             <?php
                 global $paged;
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                $current_url = $_SERVER['REQUEST_URI'];
-                $posts_number = (strpos($current_url, 'viviendas') !== false) ? -1 : 6;
+                $is_viviendas_page = (strpos($_SERVER['REQUEST_URI'], 'viviendas') !== false);
+                $posts_number = $is_viviendas_page ? -1 : 6;
                 
                 $args = array(
                     'post_type' => 'vivienda',
@@ -28,13 +28,18 @@
                 $query = new WP_Query( $args );
 
                 if ( $query->have_posts() ) : ?>
-                    <div class="row mt-3 row-posts">
+                    <div class="mt-3 posts">
                         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                                 <div class="col-xs-12 col-md-4 post">
                                     <?php get_template_part( 'loop-templates/content-vivienda', get_post_format() ); ?>	
                                 </div>
                         <?php endwhile; ?>
                     </div>
+                    <?php if (!$is_viviendas_page) : ?>
+                        <div class="col-12 col-md-4 offset-md-4 my-5 text-center">
+                            <a href="<?php echo site_url('/viviendas'); ?>" class="btn btn-dark">Ver todas las viviendas</a>
+                        </div>
+                    <?php endif; ?>
                 <?php endif; ?>
                 <?php
                     understrap_pagination( [
