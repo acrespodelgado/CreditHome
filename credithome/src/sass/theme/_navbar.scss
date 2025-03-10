@@ -1,0 +1,46 @@
+/*
+ ** Navbar
+*/
+
+#pre-header {
+    background: $dark-gold;
+    color: $white;
+    padding: 5px 0;
+    text-align: center;
+
+    a {
+        color: $white;
+    }
+
+    span {
+        font-weight: bold;
+        color: $white;
+        margin: 0 20px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+#main-nav {
+    background-color: $transparent !important;
+    padding: 1rem 2rem;
+    margin-top: 35px;
+
+    #main-menu {
+        li {
+            margin: 0 1.25rem;
+
+            a {
+                padding: 0;
+            }
+
+            &.active {
+                a {
+                    border-bottom: 1px solid $accent;
+                }
+            }
+        }
+    }
+}

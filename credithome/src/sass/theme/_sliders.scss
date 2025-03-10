@@ -1,0 +1,74 @@
+/*
+ ** Sliders
+*/ 
+
+.n2-ss-layer {
+
+    .cover {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        opacity: 0.61;
+        z-index: 2;
+    }
+
+    h1 {
+        font-size: 64px;
+        font-weight: 400;
+        color: $white;
+        line-height: 0.85;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        max-width: 40%;
+        font-size: 18px;
+        font-weight: 400;
+        color: $white;
+        line-height: 1.25;
+    }
+
+    // Home
+
+    .home-slider {
+
+        h2 {
+            font-size: 24px;
+            font-weight: 400;
+            color: $accent;
+            line-height: 0.85;
+        }
+
+        p {
+            color: $accent;
+        }
+        
+    }
+    
+    .nums {
+        font-family: "Barlow", sans-serif;
+
+        span {
+            font-size: 72px;
+            font-weight: bold;
+            color: $accent;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
+            margin: 2rem 0;
+        }
+
+        a {
+            font-size: 14px;
+            font-weight: 300;
+            color: $white;
+            border: 1px solid $white;
+            border-radius: 32px;
+            padding: 10px 30px;
+        }
+    }
+}

@@ -1,0 +1,154 @@
+/*
+ ** Vision
+*/
+
+#vision {
+    height: 400px;
+
+    .left {
+        width: 400px;
+    }
+}
+
+/*
+ ** Valores
+*/
+
+#valores {
+    position: relative;
+    background: $primary;
+    padding: 5rem 0;
+    color: $white;
+
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 20x;
+        font-weight: 400;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    ul {
+        position: relative;
+
+        li {
+            margin-left: 1.25rem;
+        }
+
+        .blur {
+            display: flex;
+            position: absolute;
+            left: -7.4rem;
+            width: 120px;
+            height: 80px;
+            padding: 10px 30px;
+            border: 1px solid $gold;
+            border-radius: 16px;
+            text-align: center;
+            align-items: center;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+/*
+ ** Oficinas
+*/
+
+#oficinas {
+    background: $light;
+    color: $primary;
+    padding: 5rem 0;
+
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 20x;
+        font-weight: 400;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .oficina .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .oficina .col-md-4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-10 ul {
+        flex-direction: column !important;
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+    .col-10 ul li {
+        margin-bottom: 1rem;
+    }
+
+    .col-2 ul {
+        flex-direction: column !important;
+        margin: 0;
+    }
+
+    .col-2 ul li {
+        margin-bottom: 1rem;
+    }
+
+    .col-10 ul li,
+    .col-2 ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .col-10 ul li h3,
+    .col-10 ul li p {
+        margin: 0;
+    }
+
+    .col-2 ul li .btn {
+        white-space: nowrap;
+    }
+
+    .col-10,
+    .col-2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn {
+        margin-top: 1rem;
+    }
+}
