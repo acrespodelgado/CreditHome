@@ -27,8 +27,8 @@
             </div>
 
             <div class="col-12 col-lg-5 p-0">
-                <img src="<?php echo site_url('/img/comprar_contact_form.png'); ?>" alt="Imagen Compra" id="img-compra" class="img-fluid h-100 w-100 object-fit-cover">
-                <img src="<?php echo site_url('/img/vender_contact_form.png'); ?>" alt="Imagen Venta" id="img-venta" class="d-none img-fluid h-100 w-100 object-fit-cover">
+                <img src="<?php echo site_url('/img/comprar_contact_form.png'); ?>" alt="Imagen Compra" id="img-compra" class="img-fluid h-100 w-100 object-fit-cover zoom">
+                <img src="<?php echo site_url('/img/vender_contact_form.png'); ?>" alt="Imagen Venta" id="img-venta" class="d-none img-fluid h-100 w-100 object-fit-cover zoom">
             </div>
         </div>
     </div>

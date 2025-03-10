@@ -40,6 +40,15 @@ a {
     color: $dark-gold;
 }
 
+.zoom {
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        transform: scale(1.12);
+        filter: brightness(0.9);
+    }
+}
+
 @mixin container-padding {
     @each $name, $values in $breakpoints {
         $breakpoint: map-get($values, point);
@@ -56,10 +65,55 @@ a {
 }
 
 /*
+ ** Navbar
+*/
+
+#pre-header {
+    background: $dark-gold;
+    color: $white;
+    padding: 5px 0;
+    text-align: center;
+
+    a {
+        color: $white;
+    }
+
+    span {
+        font-weight: bold;
+        color: $white;
+        margin: 0 20px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+#main-nav {
+    background-color: $transparent !important;
+    padding: 1rem 2rem;
+    margin-top: 35px;
+
+    #main-menu {
+        li {
+            margin: 0 1.25rem;
+
+            a {
+                padding: 0;
+            }
+
+            &.active {
+                a {
+                    border-bottom: 1px solid $accent;
+                }
+            }
+        }
+    }
+}
+
+/*
  ** Sliders
 */ 
-
-// Home
 
 .n2-ss-layer {
 
@@ -72,6 +126,24 @@ a {
         z-index: 2;
     }
 
+    h1 {
+        font-size: 64px;
+        font-weight: 400;
+        color: $white;
+        line-height: 0.85;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        max-width: 40%;
+        font-size: 18px;
+        font-weight: 400;
+        color: $white;
+        line-height: 1.25;
+    }
+
+    // Home
+
     .home-slider {
 
         h2 {
@@ -80,22 +152,11 @@ a {
             color: $accent;
             line-height: 0.85;
         }
-    
-        h1 {
-            font-size: 64px;
-            font-weight: 400;
-            color: $white;
-            line-height: 0.85;
-            margin-bottom: 2rem;
-        }
-    
+
         p {
-            max-width: 40%;
-            font-size: 18px;
-            font-weight: 400;
             color: $accent;
-            line-height: 1.25;
         }
+        
     }
     
     .nums {
@@ -130,13 +191,20 @@ a {
 */
 
 #plan {
-    position: relative;
-    background: $light;
-    padding: 5rem 0;
     height: 700px;
 
     .left {
         width: 700px;
+    }
+}
+
+#plan,
+#vision {
+    position: relative;
+    background: $light;
+    padding: 5rem 0;
+
+    .left {
         top: 0;
     }
 
@@ -165,6 +233,18 @@ a {
             background: $dark-gold;
             color: $white;
         }
+    }
+}
+
+/*
+ ** Real State
+*/
+
+#vision {
+    height: 400px;
+
+    .left {
+        width: 400px;
     }
 }
 
@@ -198,6 +278,7 @@ a {
 
         .col-md-3 {
             position: relative;
+            overflow: hidden;
 
             .icono {
                 width: 100%;
@@ -518,16 +599,20 @@ a {
 
 #contact-form {
     background: $light;
+    overflow: hidden;
+
     h3 {
         font-size: 28px;
         font-weight: 400;
         color: $primary;
     }
+
     h4 {
         font-size: 21px;
         font-weight: 400;
         color: $accent;
     }
+
     h5 {
         font-size: 14px;
         font-weight: bold;
@@ -570,10 +655,6 @@ a {
         &.active {
             display: block;
         }
-    }
-
-    #img-compra, #img-venta {
-        transition: opacity 0.3s ease;
     }
 
     .wpcf7 {

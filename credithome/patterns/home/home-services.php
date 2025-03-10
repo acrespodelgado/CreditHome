@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row shadow">
             <div class="col-12 col-md-3 p-0">
-                <img src="<?php echo site_url('/img/servicios_home_1.png'); ?>" alt="Servicios Asesoría Inmobiliaria" />
+                <img src="<?php echo site_url('/img/servicios_home_1.png'); ?>" alt="Servicios Asesoría Inmobiliaria" class="zoom" />
                 <div class="icono">
                     <div class="blur">
                         <img src="<?php echo site_url('/img/icono_inmobiliaria.png'); ?>" alt="Icono Servicios Asesoría Inmobiliaria" />
@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-3 p-0">
-                <img src="<?php echo site_url('/img/servicios_home_2.png'); ?>" alt="Servicios Asesoría Financiera" />
+                <img src="<?php echo site_url('/img/servicios_home_2.png'); ?>" alt="Servicios Asesoría Financiera" class="zoom" />
                 <div class="icono">
                     <div class="blur">
                         <img src="<?php echo site_url('/img/icono_financiera.png'); ?>" alt="Icono Servicios Asesoría Financiera" />
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-3 p-0">
-                <img src="<?php echo site_url('/img/servicios_home_3.png'); ?>" alt="Servicios Asesoramiento Legal" />
+                <img src="<?php echo site_url('/img/servicios_home_3.png'); ?>" alt="Servicios Asesoramiento Legal" class="zoom" />
                 <div class="icono">
                     <div class="blur">
                         <img src="<?php echo site_url('/img/icono_asesoramiento.png'); ?>" alt="Icono Servicios Asesoría Inmobiliaria" />
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-3 p-0">
-                <img src="<?php echo site_url('/img/servicios_home_4.png'); ?>" alt="Servicios Gestión Integral" />
+                <img src="<?php echo site_url('/img/servicios_home_4.png'); ?>" alt="Servicios Gestión Integral" class="zoom" />
                 <div class="icono">
                     <div class="blur">
                         <img src="<?php echo site_url('/img/icono_gestion.png'); ?>" alt="Icono Servicios Gestión" />

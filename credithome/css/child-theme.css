@@ -15006,6 +15006,50 @@ a:hover {
   color: #847751;
 }
 
+.zoom {
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.zoom:hover {
+  transform: scale(1.12);
+  filter: brightness(0.9);
+}
+
+/*
+ ** Navbar
+*/
+#pre-header {
+  background: #847751;
+  color: #FFF;
+  padding: 5px 0;
+  text-align: center;
+}
+#pre-header a {
+  color: #FFF;
+}
+#pre-header span {
+  font-weight: bold;
+  color: #FFF;
+  margin: 0 20px;
+}
+#pre-header p {
+  margin: 0;
+}
+
+#main-nav {
+  background-color: rgba(0, 0, 0, 0) !important;
+  padding: 1rem 2rem;
+  margin-top: 35px;
+}
+#main-nav #main-menu li {
+  margin: 0 1.25rem;
+}
+#main-nav #main-menu li a {
+  padding: 0;
+}
+#main-nav #main-menu li.active a {
+  border-bottom: 1px solid #BCA76F;
+}
+
 /*
  ** Sliders
 */
@@ -15017,25 +15061,28 @@ a:hover {
   opacity: 0.61;
   z-index: 2;
 }
-.n2-ss-layer .home-slider h2, .n2-ss-layer .home-slider .h2 {
-  font-size: 24px;
-  font-weight: 400;
-  color: #BCA76F;
-  line-height: 0.85;
-}
-.n2-ss-layer .home-slider h1, .n2-ss-layer .home-slider .h1 {
+.n2-ss-layer h1, .n2-ss-layer .h1 {
   font-size: 64px;
   font-weight: 400;
   color: #FFF;
   line-height: 0.85;
   margin-bottom: 2rem;
 }
-.n2-ss-layer .home-slider p {
+.n2-ss-layer p {
   max-width: 40%;
   font-size: 18px;
   font-weight: 400;
-  color: #BCA76F;
+  color: #FFF;
   line-height: 1.25;
+}
+.n2-ss-layer .home-slider h2, .n2-ss-layer .home-slider .h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #BCA76F;
+  line-height: 0.85;
+}
+.n2-ss-layer .home-slider p {
+  color: #BCA76F;
 }
 .n2-ss-layer .nums {
   font-family: "Barlow", sans-serif;
@@ -15064,27 +15111,42 @@ a:hover {
  ** Plan Home
 */
 #plan {
-  position: relative;
-  background: #E8E6E0;
-  padding: 5rem 0;
   height: 700px;
 }
 #plan .left {
   width: 700px;
+}
+
+#plan,
+#vision {
+  position: relative;
+  background: #E8E6E0;
+  padding: 5rem 0;
+}
+#plan .left,
+#vision .left {
   top: 0;
 }
-#plan h3, #plan .h3 {
+#plan h3, #plan .h3,
+#vision h3,
+#vision .h3 {
   font-size: 48px;
   font-weight: 400;
   color: #040404;
   margin-bottom: 3rem;
 }
-#plan p {
+#plan p,
+#vision p {
   font-size: 17px;
   font-weight: 400;
   color: #040404;
 }
-#plan a.btn, #plan .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #plan a.button, #plan .woocommerce-info a.button, .woocommerce-info #plan a.button {
+#plan a.btn, #plan .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #plan a.button, #plan .woocommerce-info a.button, .woocommerce-info #plan a.button,
+#vision a.btn,
+#vision .woocommerce-notices-wrapper .woocommerce-message a.button,
+.woocommerce-notices-wrapper .woocommerce-message #vision a.button,
+#vision .woocommerce-info a.button,
+.woocommerce-info #vision a.button {
   font-size: 14px;
   font-weight: 400;
   color: #040404;
@@ -15092,9 +15154,24 @@ a:hover {
   border: 1px solid #BCA76F;
   border-radius: 32px;
 }
-#plan a.btn:hover, #plan .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .woocommerce-notices-wrapper .woocommerce-message #plan a.button:hover, #plan .woocommerce-info a.button:hover, .woocommerce-info #plan a.button:hover {
+#plan a.btn:hover, #plan .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .woocommerce-notices-wrapper .woocommerce-message #plan a.button:hover, #plan .woocommerce-info a.button:hover, .woocommerce-info #plan a.button:hover,
+#vision a.btn:hover,
+#vision .woocommerce-notices-wrapper .woocommerce-message a.button:hover,
+.woocommerce-notices-wrapper .woocommerce-message #vision a.button:hover,
+#vision .woocommerce-info a.button:hover,
+.woocommerce-info #vision a.button:hover {
   background: #847751;
   color: #FFF;
+}
+
+/*
+ ** Real State
+*/
+#vision {
+  height: 400px;
+}
+#vision .left {
+  width: 400px;
 }
 
 /*
@@ -15120,6 +15197,7 @@ a:hover {
 }
 #servicios-home .shadow .col-md-3 {
   position: relative;
+  overflow: hidden;
 }
 #servicios-home .shadow .col-md-3 .icono {
   width: 100%;
@@ -15399,6 +15477,7 @@ a:hover {
 */
 #contact-form {
   background: #E8E6E0;
+  overflow: hidden;
 }
 #contact-form h3, #contact-form .h3 {
   font-size: 28px;
@@ -15460,9 +15539,6 @@ a:hover {
 }
 #contact-form .form-section.active {
   display: block;
-}
-#contact-form #img-compra, #contact-form #img-venta {
-  transition: opacity 0.3s ease;
 }
 #contact-form .wpcf7 {
   max-width: none !important;

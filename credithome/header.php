@@ -33,6 +33,10 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 			<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
 		</a>
 
+		<div id="pre-header" class="fixed-top">
+			<p>Sevilla - Marbella - Madrid<span>|</span><a href="mailto:info@credithomerealestate.com">info@credithomerealestate.com</a><span>|</span><a href="955459695">955 459 695</a></p>
+		</div>
+
 		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
 
 	</header><!-- #wrapper-navbar -->
