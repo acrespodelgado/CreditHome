@@ -8,6 +8,14 @@
     .left {
         width: 400px;
     }
+
+    @media (max-width: 576px) {
+        height: auto;
+
+        h3 {
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 /*
@@ -61,6 +69,19 @@
 
             img {
                 margin: 0 auto;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        ul {
+            text-align: center;
+            justify-content: center;
+
+            .blur {
+                position: inherit;
+                margin: 15px auto;
             }
         }
     }
@@ -150,5 +171,22 @@
 
     .btn {
         margin-top: 1rem;
+    }
+
+    @media (max-width: 576px) {
+        padding: 3rem 0;
+
+        .oficina {
+
+            .list-group-horizontal {
+                text-align: center;
+                justify-content: center;
+
+                a {
+                    margin-top: 0;
+                    padding: 5px 10px;
+                }
+            }
+        }
     }
 }

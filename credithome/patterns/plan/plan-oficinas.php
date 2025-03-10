@@ -10,7 +10,7 @@
                     <div class="col-12 col-md-4">
                         <img src="<?php echo site_url('/img/oficina_sevilla.png'); ?>" alt="Imagen Sevilla" class="zoom">
                     </div>
-                    <div class="col-10 col-md-6">
+                    <div class="col-12 col-md-6 mt-3 mt-md-0">
                         <ul class="list-unstyled list-group list-group-horizontal d-flex">
                             <li>
                                 <h3>Sevilla</h3>
@@ -26,7 +26,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-md-2">
                         <ul class="list-unstyled list-group list-group-horizontal d-flex">
                             <li>
                                 <a href="tel:" class="btn">Llamar a Sevilla</a>
@@ -46,7 +46,7 @@
                     <div class="col-12 col-md-4">
                         <img src="<?php echo site_url('/img/oficina_malaga.png'); ?>" alt="Imagen Málaga" class="zoom">
                     </div>
-                    <div class="col-10 col-md-6">
+                    <div class="col-12 col-md-6 mt-3 mt-md-0">
                         <ul class="list-unstyled list-group list-group-horizontal d-flex">
                             <li>
                                 <h3>Puerto Banús, Marbella</h3>
@@ -54,7 +54,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-md-2">
                         <ul class="list-unstyled list-group list-group-horizontal d-flex">
                             <li>
                                 <a href="tel:" class="btn">Llamar a Puerto Banús</a>
@@ -68,7 +68,7 @@
                     <div class="col-12 col-md-4">
                         <img src="<?php echo site_url('/img/oficina_madrid.png'); ?>" alt="Imagen Madrid" class="zoom">
                     </div>
-                    <div class="col-10 col-md-6">
+                    <div class="col-12 col-md-6 mt-3 mt-md-0">
                         <ul class="list-unstyled list-group list-group-horizontal d-flex">
                             <li>
                                 <h3>Madrid</h3>
@@ -76,7 +76,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-md-2">
                         <ul class="list-unstyled list-group list-group-horizontal d-flex">
                             <li>
                                 <a href="tel:" class="btn">Llamar a Madrid</a>

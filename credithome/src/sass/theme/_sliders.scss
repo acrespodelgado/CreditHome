@@ -43,7 +43,6 @@
         p {
             color: $accent;
         }
-        
     }
     
     .nums {
@@ -69,6 +68,37 @@
             border: 1px solid $white;
             border-radius: 32px;
             padding: 10px 30px;
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        .home-slider {
+            margin-top: 200px;
+
+            h2 {
+                font-size: 21px;
+            }
+    
+            h1 {
+                font-size: 42px;
+                margin-bottom: 1rem;
+            }
+    
+            p {
+                max-width: none;
+            }
+        }
+
+        .nums {
+
+            span {
+                font-size: 42px;
+            }
+
+            a {
+                padding: 5px 15px;
+            }
         }
     }
 }

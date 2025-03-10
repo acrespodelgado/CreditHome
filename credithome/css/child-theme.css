@@ -15441,6 +15441,15 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 .left.gold {
   border-bottom: 1px solid #BCA76F;
 }
+@media (max-width: 576px) {
+  .left {
+    width: 100% !important;
+    position: relative;
+    padding: 1rem 0;
+    transform: none;
+    margin-bottom: 2rem;
+  }
+}
 
 .gold {
   color: #BCA76F;
@@ -15690,6 +15699,11 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   color: #A2A2A2;
   margin: 0;
 }
+@media (max-width: 576px) {
+  #wrapper-footer ul.list-group-horizontal {
+    justify-content: center;
+  }
+}
 
 /*
  ** Plan Home
@@ -15699,6 +15713,11 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 }
 #plan .left {
   width: 700px;
+}
+@media (max-width: 576px) {
+  #plan {
+    height: auto;
+  }
 }
 
 #plan,
@@ -15724,6 +15743,17 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   font-size: 17px;
   font-weight: 400;
   color: #040404;
+}
+@media (max-width: 576px) {
+  #plan,
+  #vision {
+    padding: 2rem 0;
+  }
+  #plan h3, #plan .h3,
+  #vision h3,
+  #vision .h3 {
+    margin-top: 2rem;
+  }
 }
 
 /*
@@ -15801,6 +15831,11 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   background: #BCA76F;
   color: #040404;
 }
+@media (max-width: 576px) {
+  #servicios-home .black-section p {
+    margin-top: 2rem;
+  }
+}
 
 /*
  ** Opiniones
@@ -15808,6 +15843,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #opiniones {
   height: 400px;
   position: relative;
+  background: #E8E6E0;
 }
 #opiniones .left {
   width: 400px;
@@ -15884,6 +15920,23 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #opiniones #opinionCarousel .carousel-control-next {
   right: 0;
 }
+@media (max-width: 576px) {
+  #opiniones {
+    height: auto;
+    min-height: 600px;
+  }
+  #opiniones #opinionCarousel {
+    height: auto;
+    min-height: 600px;
+  }
+  #opiniones #opinionCarousel p {
+    max-width: 80%;
+  }
+  #opiniones .right {
+    position: inherit;
+    padding: 15px 5px;
+  }
+}
 
 /*
  ** Navbar
@@ -15905,6 +15958,11 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #pre-header p {
   margin: 0;
 }
+@media (max-width: 576px) {
+  #pre-header p {
+    font-size: 9px;
+  }
+}
 
 #main-nav {
   background-color: rgba(0, 0, 0, 0) !important;
@@ -15920,6 +15978,11 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #main-nav #main-menu li.active a {
   border-bottom: 1px solid #BCA76F;
 }
+@media (max-width: 576px) {
+  #main-nav {
+    padding: 2rem 0;
+  }
+}
 
 /*
  ** Vision
@@ -15929,6 +15992,14 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 }
 #vision .left {
   width: 400px;
+}
+@media (max-width: 576px) {
+  #vision {
+    height: auto;
+  }
+  #vision h3, #vision .h3 {
+    margin-bottom: 1rem;
+  }
 }
 
 /*
@@ -15976,6 +16047,16 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 }
 #valores ul .blur img {
   margin: 0 auto;
+}
+@media (max-width: 576px) {
+  #valores ul {
+    text-align: center;
+    justify-content: center;
+  }
+  #valores ul .blur {
+    position: inherit;
+    margin: 15px auto;
+  }
 }
 
 /*
@@ -16048,6 +16129,19 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #oficinas .btn, #oficinas .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #oficinas a.button, #oficinas .woocommerce-info a.button, .woocommerce-info #oficinas a.button, #oficinas .wpcf7 input[type=submit], .wpcf7 #oficinas input[type=submit] {
   margin-top: 1rem;
 }
+@media (max-width: 576px) {
+  #oficinas {
+    padding: 3rem 0;
+  }
+  #oficinas .oficina .list-group-horizontal {
+    text-align: center;
+    justify-content: center;
+  }
+  #oficinas .oficina .list-group-horizontal a {
+    margin-top: 0;
+    padding: 5px 10px;
+  }
+}
 
 /*
  ** Sliders
@@ -16104,6 +16198,27 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   border: 1px solid #FFF;
   border-radius: 32px;
   padding: 10px 30px;
+}
+@media (max-width: 576px) {
+  .n2-ss-layer .home-slider {
+    margin-top: 200px;
+  }
+  .n2-ss-layer .home-slider h2, .n2-ss-layer .home-slider .h2 {
+    font-size: 21px;
+  }
+  .n2-ss-layer .home-slider h1, .n2-ss-layer .home-slider .h1 {
+    font-size: 42px;
+    margin-bottom: 1rem;
+  }
+  .n2-ss-layer .home-slider p {
+    max-width: none;
+  }
+  .n2-ss-layer .nums span {
+    font-size: 42px;
+  }
+  .n2-ss-layer .nums a {
+    padding: 5px 15px;
+  }
 }
 
 /*
@@ -16238,6 +16353,11 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   color: #FFF;
   border: 1px solid #BCA76F;
   border-radius: 32px;
+}
+@media (max-width: 576px) {
+  #viviendas h3, #viviendas .h3 {
+    margin-top: 2rem;
+  }
 }
 
 /*# sourceMappingURL=child-theme.css.map */

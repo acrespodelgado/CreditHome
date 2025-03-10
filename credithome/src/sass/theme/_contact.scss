@@ -24,6 +24,7 @@
     }
 
     .col-lg-7 {
+        
         .container {
             @include container-padding;
         }
@@ -65,12 +66,14 @@
     .wpcf7 {
         max-width: none !important;
         color: $accent;
+
         .wpcf7-list-item {
             margin: 0;
         }
 
         .wpcf7-form-control-wrap[data-name="your-features"],
         .wpcf7-form-control-wrap[data-name="your-status"] {
+
             .wpcf7-checkbox {
                 font-size: 14px;
                 font-weight: 300;
@@ -88,6 +91,7 @@
             border-radius: 32px;
             border-color: $dark-gold;
             transition: all 0.3s ease-in;
+
             &:hover {
                 background: $light;
                 color: $dark-gold;

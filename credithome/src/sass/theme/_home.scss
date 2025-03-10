@@ -8,6 +8,10 @@
     .left {
         width: 700px;
     }
+
+    @media(max-width: 576px) {
+        height: auto;
+    }
 }
 
 #plan,
@@ -32,6 +36,14 @@
         font-weight: 400;
         color: $primary;
     }
+
+    @media(max-width: 576px) {
+        padding: 2rem 0;
+
+        h3 {
+            margin-top: 2rem;
+        }
+    }
 }
 
 /*
@@ -39,6 +51,7 @@
 */
 
 #servicios-home {
+
     .shadow {
         position: relative;
         
@@ -99,7 +112,9 @@
             }
         }
     }
+
     .black-section {
+
         background: $black;
         padding: 3rem 0;
 
@@ -125,6 +140,16 @@
             }
         }
     }
+
+    @media (max-width: 576px) {
+
+        .black-section {
+
+            p {
+                margin-top: 2rem;
+            }
+        }
+    }
 }
 
 /*
@@ -134,6 +159,7 @@
 #opiniones {
     height: $carousel-height;
     position: relative;
+    background: $light;
 
     .left {
         width: $carousel-height;
@@ -171,6 +197,7 @@
         }
 
         .stars {
+
             .fa {
                 color: $accent;
                 margin: 0 5px;
@@ -188,6 +215,7 @@
                 min-height: $carousel-height - 100px; // La misma altura que carousel-inner
                 margin: 0 auto;
             }
+            
             &.active,
             &-next,
             &-prev {
@@ -226,6 +254,25 @@
 
         .carousel-control-next {
             right: 0;
+        }
+    }
+
+    @media(max-width: 576px) {
+        height: auto;
+        min-height: 600px;
+
+        #opinionCarousel {
+            height: auto;
+            min-height: 600px;
+
+            p {
+                max-width: 80%;
+            }
+        }
+
+        .right {
+            position: inherit;
+            padding: 15px 5px;
         }
     }
 }

@@ -21,6 +21,12 @@
     p {
         margin: 0;
     }
+
+    @media (max-width: 576px) {
+        p {
+            font-size: 9px;
+        }
+    }
 }
 
 #main-nav {
@@ -37,10 +43,15 @@
             }
 
             &.active {
+                
                 a {
                     border-bottom: 1px solid $accent;
                 }
             }
         }
+    }
+
+    @media (max-width: 576px) {
+        padding: 2rem 0;
     }
 }
