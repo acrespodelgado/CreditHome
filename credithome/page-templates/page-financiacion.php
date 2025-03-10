@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Page - Plan
+ * Template Name: Page - Financiacion
  *
- * Template for Plan page.
+ * Template for Financiacion page.
  *
  * @package Understrap
  */

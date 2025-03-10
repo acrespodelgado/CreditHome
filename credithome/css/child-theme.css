@@ -14981,6 +14981,19 @@ a:hover {
   opacity: 0.63;
   transition: all 0.3s ease-in-out;
 }
+a.btn, .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button {
+  background: rgba(0, 0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  color: #040404;
+  padding: 10px 30px;
+  border: 1px solid #BCA76F;
+  border-radius: 32px;
+}
+a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .woocommerce-info a.button:hover {
+  background: #847751;
+  color: #FFF;
+}
 
 .blur {
   background: rgba(255, 255, 255, 0.1);
@@ -14996,6 +15009,9 @@ a:hover {
   transform-origin: left top;
   border-bottom: 1px solid #040404;
   text-align: center;
+}
+.left.gold {
+  border-bottom: 1px solid #BCA76F;
 }
 
 .gold {
@@ -15141,28 +15157,6 @@ a:hover {
   font-weight: 400;
   color: #040404;
 }
-#plan a.btn, #plan .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #plan a.button, #plan .woocommerce-info a.button, .woocommerce-info #plan a.button,
-#vision a.btn,
-#vision .woocommerce-notices-wrapper .woocommerce-message a.button,
-.woocommerce-notices-wrapper .woocommerce-message #vision a.button,
-#vision .woocommerce-info a.button,
-.woocommerce-info #vision a.button {
-  font-size: 14px;
-  font-weight: 400;
-  color: #040404;
-  padding: 10px 30px;
-  border: 1px solid #BCA76F;
-  border-radius: 32px;
-}
-#plan a.btn:hover, #plan .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .woocommerce-notices-wrapper .woocommerce-message #plan a.button:hover, #plan .woocommerce-info a.button:hover, .woocommerce-info #plan a.button:hover,
-#vision a.btn:hover,
-#vision .woocommerce-notices-wrapper .woocommerce-message a.button:hover,
-.woocommerce-notices-wrapper .woocommerce-message #vision a.button:hover,
-#vision .woocommerce-info a.button:hover,
-.woocommerce-info #vision a.button:hover {
-  background: #847751;
-  color: #FFF;
-}
 
 /*
  ** Real State
@@ -15172,6 +15166,50 @@ a:hover {
 }
 #vision .left {
   width: 400px;
+}
+
+#valores {
+  position: relative;
+  background: #040404;
+  padding: 5rem 0;
+  color: #FFF;
+}
+#valores h2, #valores .h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+#valores h3, #valores .h3 {
+  font-size: 20x;
+  font-weight: 400;
+}
+#valores h4, #valores .h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+#valores p {
+  font-size: 14px;
+  font-weight: 300;
+}
+#valores ul {
+  position: relative;
+}
+#valores ul li {
+  margin-left: 1.25rem;
+}
+#valores ul .blur {
+  display: flex;
+  position: absolute;
+  left: -7.4rem;
+  width: 120px;
+  height: 80px;
+  padding: 10px 30px;
+  border: 1px solid #BCA76F;
+  border-radius: 16px;
+  text-align: center;
+  align-items: center;
+}
+#valores ul .blur img {
+  margin: 0 auto;
 }
 
 /*
@@ -15242,13 +15280,8 @@ a:hover {
   color: #FFF;
 }
 #servicios-home .black-section a.btn, #servicios-home .black-section .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #servicios-home .black-section a.button, #servicios-home .black-section .woocommerce-info a.button, .woocommerce-info #servicios-home .black-section a.button {
-  background: rgba(0, 0, 0, 0);
-  border: 1px solid #BCA76F;
-  border-radius: 32px;
-  font-size: 14px;
   font-weight: 300;
   color: #FFF;
-  padding: 10px 30px;
 }
 #servicios-home .black-section a.btn:hover, #servicios-home .black-section .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .woocommerce-notices-wrapper .woocommerce-message #servicios-home .black-section a.button:hover, #servicios-home .black-section .woocommerce-info a.button:hover, .woocommerce-info #servicios-home .black-section a.button:hover {
   background: #BCA76F;
@@ -15470,6 +15503,77 @@ a:hover {
   color: #FFF;
   border: 1px solid #BCA76F;
   border-radius: 32px;
+}
+
+/*
+ ** Oficinas
+*/
+#oficinas {
+  background: #E8E6E0;
+  color: #040404;
+  padding: 5rem 0;
+}
+#oficinas h2, #oficinas .h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+#oficinas h3, #oficinas .h3 {
+  font-size: 20x;
+  font-weight: 400;
+}
+#oficinas h4, #oficinas .h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+#oficinas p {
+  font-size: 14px;
+  font-weight: 400;
+}
+#oficinas .oficina .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#oficinas .oficina .col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+#oficinas .col-10 ul {
+  flex-direction: column !important;
+  margin: 0;
+  padding-left: 1rem;
+}
+#oficinas .col-10 ul li {
+  margin-bottom: 1rem;
+}
+#oficinas .col-2 ul {
+  flex-direction: column !important;
+  margin: 0;
+}
+#oficinas .col-2 ul li {
+  margin-bottom: 1rem;
+}
+#oficinas .col-10 ul li,
+#oficinas .col-2 ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+#oficinas .col-10 ul li h3, #oficinas .col-10 ul li .h3,
+#oficinas .col-10 ul li p {
+  margin: 0;
+}
+#oficinas .col-2 ul li .btn, #oficinas .col-2 ul li .wpcf7 input[type=submit], .wpcf7 #oficinas .col-2 ul li input[type=submit], #oficinas .col-2 ul li .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #oficinas .col-2 ul li a.button, #oficinas .col-2 ul li .woocommerce-info a.button, .woocommerce-info #oficinas .col-2 ul li a.button {
+  white-space: nowrap;
+}
+#oficinas .col-10,
+#oficinas .col-2 {
+  display: flex;
+  align-items: center;
+}
+#oficinas .btn, #oficinas .wpcf7 input[type=submit], .wpcf7 #oficinas input[type=submit], #oficinas .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #oficinas a.button, #oficinas .woocommerce-info a.button, .woocommerce-info #oficinas a.button {
+  margin-top: 1rem;
 }
 
 /*
