@@ -2,7 +2,7 @@
 /**
  * Template Name: Page - Contacto
  *
- * Template for displaying a page without sidebar even if a sidebar widget is published.
+ * Template for Contacto page.
  *
  * @package Understrap
  */
@@ -29,22 +29,14 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 
 		<div class="row">
 
-			<div class="col-md-12 content-area" id="primary">
+			<div class="col-md-12 content-area p-0" id="primary">
 
 				<main class="site-main" id="main" role="main">
-
-					<?php
-					while ( have_posts() ) {
-						the_post();
-						get_template_part( 'loop-templates/content', 'page' );
-
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) {
-							comments_template();
-						}
-					}
-					?>
-
+				<?php echo do_shortcode('[smartslider3 slider="10"]'); ?>
+				<?php include get_stylesheet_directory() . '/patterns/contactform/contactform-buy.php'; ?>
+				<?php include get_stylesheet_directory() . '/patterns/contacto/contacto-oficinas.php'; ?>
+				<?php echo do_shortcode('[smartslider3 slider="11"]'); ?>
+				<?php include get_stylesheet_directory() . '/patterns/contactform/contactform-sell.php'; ?>
 				</main>
 
 			</div><!-- #primary -->

@@ -1,0 +1,82 @@
+/*
+ ** Cards Contacto
+*/
+
+#contacto-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin: 0 5rem;
+        padding: 15px 2rem;
+        border: 1px solid $accent;
+        border-radius: 16px;
+
+        h4 {
+            width: 100%;
+            font-size: 24px;
+            font-weight: 500;
+            color: $white;
+            border-bottom: 1px solid $accent;
+            margin-bottom: 1rem;
+        }
+
+        span, a {
+            font-size: 14px;
+            font-weight: 300;
+            color: $white;
+            line-height: 1;
+        }
+
+        a {
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        display: block;
+
+        .card {
+            margin: 1rem 0;
+        }
+    }
+}
+
+/*
+ ** Oficinas Contacto
+*/
+
+#contacto-oficinas {
+    background: $light;
+    color: $primary;
+    padding: 5rem 0;
+
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .separator {
+        margin: 0 auto;
+    }
+}

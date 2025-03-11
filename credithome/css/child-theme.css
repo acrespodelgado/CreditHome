@@ -15527,60 +15527,90 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 /*
  ** Formulario de contacto
 */
-#contact-form {
+#contact-form,
+#contact-form-buy,
+#contact-form-sell {
   background: #E8E6E0;
   overflow: hidden;
 }
-#contact-form h3, #contact-form .h3 {
+#contact-form h3, #contact-form .h3,
+#contact-form-buy h3,
+#contact-form-buy .h3,
+#contact-form-sell h3,
+#contact-form-sell .h3 {
   font-size: 28px;
   font-weight: 400;
   color: #040404;
 }
-#contact-form h4, #contact-form .h4 {
+#contact-form h4, #contact-form .h4,
+#contact-form-buy h4,
+#contact-form-buy .h4,
+#contact-form-sell h4,
+#contact-form-sell .h4 {
   font-size: 21px;
   font-weight: 400;
   color: #BCA76F;
 }
-#contact-form h5, #contact-form .h5 {
+#contact-form h5, #contact-form .h5,
+#contact-form-buy h5,
+#contact-form-buy .h5,
+#contact-form-sell h5,
+#contact-form-sell .h5 {
   font-size: 14px;
   font-weight: bold;
 }
 @media (min-width: 0) {
-  #contact-form .col-lg-7 .container {
+  #contact-form .col-lg-7 .container,
+  #contact-form-buy .col-lg-7 .container,
+  #contact-form-sell .col-lg-7 .container {
     padding-left: calc((100vw - 100%) / 2);
   }
 }
 @media (min-width: 576px) {
-  #contact-form .col-lg-7 .container {
+  #contact-form .col-lg-7 .container,
+  #contact-form-buy .col-lg-7 .container,
+  #contact-form-sell .col-lg-7 .container {
     padding-left: calc((100vw - 540px) / 2);
   }
 }
 @media (min-width: 768px) {
-  #contact-form .col-lg-7 .container {
+  #contact-form .col-lg-7 .container,
+  #contact-form-buy .col-lg-7 .container,
+  #contact-form-sell .col-lg-7 .container {
     padding-left: calc((100vw - 720px) / 2);
   }
 }
 @media (min-width: 992px) {
-  #contact-form .col-lg-7 .container {
+  #contact-form .col-lg-7 .container,
+  #contact-form-buy .col-lg-7 .container,
+  #contact-form-sell .col-lg-7 .container {
     padding-left: calc((100vw - 960px) / 2);
   }
 }
 @media (min-width: 1200px) {
-  #contact-form .col-lg-7 .container {
+  #contact-form .col-lg-7 .container,
+  #contact-form-buy .col-lg-7 .container,
+  #contact-form-sell .col-lg-7 .container {
     padding-left: calc((100vw - 1140px) / 2);
   }
 }
 @media (min-width: 1400px) {
-  #contact-form .col-lg-7 .container {
+  #contact-form .col-lg-7 .container,
+  #contact-form-buy .col-lg-7 .container,
+  #contact-form-sell .col-lg-7 .container {
     padding-left: calc((100vw - 1320px) / 2);
   }
 }
 @media (min-width: 1920px) {
-  #contact-form .col-lg-7 .container {
+  #contact-form .col-lg-7 .container,
+  #contact-form-buy .col-lg-7 .container,
+  #contact-form-sell .col-lg-7 .container {
     padding-left: calc((1920px - 1320px) / 2);
   }
 }
-#contact-form .btn-form {
+#contact-form .btn-form,
+#contact-form-buy .btn-form,
+#contact-form-sell .btn-form {
   padding: 10px 20px;
   margin-right: 10px;
   border: 1px solid #040404;
@@ -15589,40 +15619,60 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   transition: all 0.3s ease;
   font-size: 14px;
 }
-#contact-form .btn-form.active {
+#contact-form .btn-form.active,
+#contact-form-buy .btn-form.active,
+#contact-form-sell .btn-form.active {
   background-color: #040404;
   color: #FFF;
 }
-#contact-form .btn-form:not(.active) {
+#contact-form .btn-form:not(.active),
+#contact-form-buy .btn-form:not(.active),
+#contact-form-sell .btn-form:not(.active) {
   background-color: transparent;
   border: 1px solid #BCA76F;
   color: #040404;
 }
-#contact-form .btn-form:not(.active):hover {
+#contact-form .btn-form:not(.active):hover,
+#contact-form-buy .btn-form:not(.active):hover,
+#contact-form-sell .btn-form:not(.active):hover {
   background-color: rgba(188, 167, 111, 0.1);
 }
-#contact-form .form-section {
+#contact-form .form-section,
+#contact-form-buy .form-section,
+#contact-form-sell .form-section {
   display: none;
 }
-#contact-form .form-section.active {
+#contact-form .form-section.active,
+#contact-form-buy .form-section.active,
+#contact-form-sell .form-section.active {
   display: block;
 }
-#contact-form .wpcf7 {
+#contact-form .wpcf7,
+#contact-form-buy .wpcf7,
+#contact-form-sell .wpcf7 {
   max-width: none !important;
   color: #BCA76F;
 }
-#contact-form .wpcf7 .wpcf7-list-item {
+#contact-form .wpcf7 .wpcf7-list-item,
+#contact-form-buy .wpcf7 .wpcf7-list-item,
+#contact-form-sell .wpcf7 .wpcf7-list-item {
   margin: 0;
 }
 #contact-form .wpcf7 .wpcf7-form-control-wrap[data-name=your-features] .wpcf7-checkbox,
-#contact-form .wpcf7 .wpcf7-form-control-wrap[data-name=your-status] .wpcf7-checkbox {
+#contact-form .wpcf7 .wpcf7-form-control-wrap[data-name=your-status] .wpcf7-checkbox,
+#contact-form-buy .wpcf7 .wpcf7-form-control-wrap[data-name=your-features] .wpcf7-checkbox,
+#contact-form-buy .wpcf7 .wpcf7-form-control-wrap[data-name=your-status] .wpcf7-checkbox,
+#contact-form-sell .wpcf7 .wpcf7-form-control-wrap[data-name=your-features] .wpcf7-checkbox,
+#contact-form-sell .wpcf7 .wpcf7-form-control-wrap[data-name=your-status] .wpcf7-checkbox {
   font-size: 14px;
   font-weight: 300;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0.5rem;
 }
-#contact-form .wpcf7 .wpcf7-submit {
+#contact-form .wpcf7 .wpcf7-submit,
+#contact-form-buy .wpcf7 .wpcf7-submit,
+#contact-form-sell .wpcf7 .wpcf7-submit {
   width: auto;
   padding: 10px 20px;
   background: #847751;
@@ -15631,7 +15681,9 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   border-color: #847751;
   transition: all 0.3s ease-in;
 }
-#contact-form .wpcf7 .wpcf7-submit:hover {
+#contact-form .wpcf7 .wpcf7-submit:hover,
+#contact-form-buy .wpcf7 .wpcf7-submit:hover,
+#contact-form-sell .wpcf7 .wpcf7-submit:hover {
   background: #E8E6E0;
   color: #847751;
   transition: all 0.3s ease-in-out;
@@ -15640,7 +15692,17 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #contact-form .wpcf7 input[type=email],
 #contact-form .wpcf7 input[type=tel],
 #contact-form .wpcf7 select,
-#contact-form .wpcf7 textarea {
+#contact-form .wpcf7 textarea,
+#contact-form-buy .wpcf7 input[type=text],
+#contact-form-buy .wpcf7 input[type=email],
+#contact-form-buy .wpcf7 input[type=tel],
+#contact-form-buy .wpcf7 select,
+#contact-form-buy .wpcf7 textarea,
+#contact-form-sell .wpcf7 input[type=text],
+#contact-form-sell .wpcf7 input[type=email],
+#contact-form-sell .wpcf7 input[type=tel],
+#contact-form-sell .wpcf7 select,
+#contact-form-sell .wpcf7 textarea {
   -moz-appearance: none;
   appearance: none;
   -webkit-appearance: none;
@@ -15656,7 +15718,17 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #contact-form .wpcf7 input[type=email]:focus,
 #contact-form .wpcf7 input[type=tel]:focus,
 #contact-form .wpcf7 select:focus,
-#contact-form .wpcf7 textarea:focus {
+#contact-form .wpcf7 textarea:focus,
+#contact-form-buy .wpcf7 input[type=text]:focus,
+#contact-form-buy .wpcf7 input[type=email]:focus,
+#contact-form-buy .wpcf7 input[type=tel]:focus,
+#contact-form-buy .wpcf7 select:focus,
+#contact-form-buy .wpcf7 textarea:focus,
+#contact-form-sell .wpcf7 input[type=text]:focus,
+#contact-form-sell .wpcf7 input[type=email]:focus,
+#contact-form-sell .wpcf7 input[type=tel]:focus,
+#contact-form-sell .wpcf7 select:focus,
+#contact-form-sell .wpcf7 textarea:focus {
   outline: none;
   border-color: #847751;
   box-shadow: none;
@@ -15664,7 +15736,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   color: #040404;
   transition: all 0.3s ease-in-out;
 }
-#contact-form .wpcf7 input[type=text]::-moz-placeholder, #contact-form .wpcf7 input[type=email]::-moz-placeholder, #contact-form .wpcf7 input[type=tel]::-moz-placeholder, #contact-form .wpcf7 select::-moz-placeholder, #contact-form .wpcf7 textarea::-moz-placeholder {
+#contact-form .wpcf7 input[type=text]::-moz-placeholder, #contact-form .wpcf7 input[type=email]::-moz-placeholder, #contact-form .wpcf7 input[type=tel]::-moz-placeholder, #contact-form .wpcf7 select::-moz-placeholder, #contact-form .wpcf7 textarea::-moz-placeholder, #contact-form-buy .wpcf7 input[type=text]::-moz-placeholder, #contact-form-buy .wpcf7 input[type=email]::-moz-placeholder, #contact-form-buy .wpcf7 input[type=tel]::-moz-placeholder, #contact-form-buy .wpcf7 select::-moz-placeholder, #contact-form-buy .wpcf7 textarea::-moz-placeholder, #contact-form-sell .wpcf7 input[type=text]::-moz-placeholder, #contact-form-sell .wpcf7 input[type=email]::-moz-placeholder, #contact-form-sell .wpcf7 input[type=tel]::-moz-placeholder, #contact-form-sell .wpcf7 select::-moz-placeholder, #contact-form-sell .wpcf7 textarea::-moz-placeholder {
   color: #847751;
   opacity: 0.63;
 }
@@ -15672,22 +15744,38 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #contact-form .wpcf7 input[type=email]::placeholder,
 #contact-form .wpcf7 input[type=tel]::placeholder,
 #contact-form .wpcf7 select::placeholder,
-#contact-form .wpcf7 textarea::placeholder {
+#contact-form .wpcf7 textarea::placeholder,
+#contact-form-buy .wpcf7 input[type=text]::placeholder,
+#contact-form-buy .wpcf7 input[type=email]::placeholder,
+#contact-form-buy .wpcf7 input[type=tel]::placeholder,
+#contact-form-buy .wpcf7 select::placeholder,
+#contact-form-buy .wpcf7 textarea::placeholder,
+#contact-form-sell .wpcf7 input[type=text]::placeholder,
+#contact-form-sell .wpcf7 input[type=email]::placeholder,
+#contact-form-sell .wpcf7 input[type=tel]::placeholder,
+#contact-form-sell .wpcf7 select::placeholder,
+#contact-form-sell .wpcf7 textarea::placeholder {
   color: #847751;
   opacity: 0.63;
 }
-#contact-form .wpcf7 select {
+#contact-form .wpcf7 select,
+#contact-form-buy .wpcf7 select,
+#contact-form-sell .wpcf7 select {
   cursor: pointer;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23your-color-here' d='M6 8L2 4h8z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 12px center;
   padding-right: 30px;
 }
-#contact-form .wpcf7 textarea {
+#contact-form .wpcf7 textarea,
+#contact-form-buy .wpcf7 textarea,
+#contact-form-sell .wpcf7 textarea {
   min-height: 100px;
   resize: vertical;
 }
-#contact-form .wpcf7 input[type=checkbox] {
+#contact-form .wpcf7 input[type=checkbox],
+#contact-form-buy .wpcf7 input[type=checkbox],
+#contact-form-sell .wpcf7 input[type=checkbox] {
   -moz-appearance: none;
   appearance: none;
   -webkit-appearance: none;
@@ -15697,12 +15785,16 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   height: 15px;
   cursor: pointer;
 }
-#contact-form .wpcf7 input[type=checkbox]:checked {
+#contact-form .wpcf7 input[type=checkbox]:checked,
+#contact-form-buy .wpcf7 input[type=checkbox]:checked,
+#contact-form-sell .wpcf7 input[type=checkbox]:checked {
   background-color: transparent;
   border-color: #847751;
   position: relative;
 }
-#contact-form .wpcf7 input[type=checkbox]:checked:after {
+#contact-form .wpcf7 input[type=checkbox]:checked:after,
+#contact-form-buy .wpcf7 input[type=checkbox]:checked:after,
+#contact-form-sell .wpcf7 input[type=checkbox]:checked:after {
   content: "✓";
   position: absolute;
   left: 50%;
@@ -15710,29 +15802,51 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   transform: translate(-50%, -50%);
   color: #BCA76F;
 }
-#contact-form.black {
+#contact-form.black,
+#contact-form-buy.black,
+#contact-form-sell.black {
   background: #040404;
 }
-#contact-form.black h3, #contact-form.black .h3 {
+#contact-form.black h3, #contact-form.black .h3,
+#contact-form-buy.black h3,
+#contact-form-buy.black .h3,
+#contact-form-sell.black h3,
+#contact-form-sell.black .h3 {
   color: #FFF;
 }
-#contact-form.black .white {
+#contact-form.black .white,
+#contact-form-buy.black .white,
+#contact-form-sell.black .white {
   color: #FFF;
   margin-bottom: 0;
 }
-#contact-form.black .wpcf7-checkbox input[type=checkbox] {
+#contact-form.black .wpcf7-checkbox input[type=checkbox],
+#contact-form-buy.black .wpcf7-checkbox input[type=checkbox],
+#contact-form-sell.black .wpcf7-checkbox input[type=checkbox] {
   margin-right: 5px;
 }
-#contact-form.black .wpcf7-checkbox span {
+#contact-form.black .wpcf7-checkbox span,
+#contact-form-buy.black .wpcf7-checkbox span,
+#contact-form-sell.black .wpcf7-checkbox span {
   display: inline-flex;
   align-items: center;
   margin-right: 15px;
 }
-#contact-form.black .wpcf7-submit {
+#contact-form.black .wpcf7-submit,
+#contact-form-buy.black .wpcf7-submit,
+#contact-form-sell.black .wpcf7-submit {
   border-radius: 8px;
 }
-#contact-form.black .wpcf7-form-control-wrap[data-name=your-consent] .wpcf7-list-item-label {
+#contact-form.black .wpcf7-form-control-wrap[data-name=your-consent] .wpcf7-list-item-label,
+#contact-form-buy.black .wpcf7-form-control-wrap[data-name=your-consent] .wpcf7-list-item-label,
+#contact-form-sell.black .wpcf7-form-control-wrap[data-name=your-consent] .wpcf7-list-item-label {
   color: rgba(255, 255, 255, 0.63);
+}
+
+#contact-form-buy h3, #contact-form-buy .h3,
+#contact-form-sell h3,
+#contact-form-sell .h3 {
+  margin-top: 3rem;
 }
 
 /*
@@ -16114,7 +16228,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   font-weight: 400;
 }
 #oficinas h3, #oficinas .h3 {
-  font-size: 20x;
+  font-size: 20px;
   font-weight: 400;
 }
 #oficinas h4, #oficinas .h4 {
@@ -16609,6 +16723,78 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   #pasos .paso p {
     flex-grow: 1;
   }
+}
+
+/*
+ ** Cards Contacto
+*/
+#contacto-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+#contacto-cards .card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 5rem;
+  padding: 15px 2rem;
+  border: 1px solid #BCA76F;
+  border-radius: 16px;
+}
+#contacto-cards .card h4, #contacto-cards .card .h4 {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFF;
+  border-bottom: 1px solid #BCA76F;
+  margin-bottom: 1rem;
+}
+#contacto-cards .card span, #contacto-cards .card a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #FFF;
+  line-height: 1;
+}
+#contacto-cards .card a {
+  font-weight: bold;
+  margin-left: 5px;
+}
+@media (max-width: 576px) {
+  #contacto-cards {
+    display: block;
+  }
+  #contacto-cards .card {
+    margin: 1rem 0;
+  }
+}
+
+/*
+ ** Oficinas Contacto
+*/
+#contacto-oficinas {
+  background: #E8E6E0;
+  color: #040404;
+  padding: 5rem 0;
+}
+#contacto-oficinas h2, #contacto-oficinas .h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+#contacto-oficinas h3, #contacto-oficinas .h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+#contacto-oficinas h4, #contacto-oficinas .h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+#contacto-oficinas p {
+  font-size: 14px;
+  font-weight: 400;
+}
+#contacto-oficinas .separator {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=child-theme.css.map */

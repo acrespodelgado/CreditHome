@@ -13,16 +13,22 @@
                     <div class="col-12 col-md-6 mt-3 mt-md-0">
                         <ul class="list-unstyled list-group list-group-horizontal d-flex">
                             <li>
-                                <h3>Sevilla</h3>
-                                <p>Av. San Francisco Javier, 9 Edificio Sevilla 2, planta 4, módulo 16 de Sevilla</p>
+                                <a href="https://maps.app.goo.gl/gtv47xrss3tU14Sc6" target="_blank">
+                                    <h3>Sevilla</h3>
+                                    <p>Av. San Francisco Javier, 9 Edificio Sevilla 2, planta 4, módulo 16 de Sevilla</p>
+                                </a>
                             </li>
                             <li>
-                                <h3>Bormujos</h3>
-                                <p>Calle Perú, 49 Edif. Corona Center, planta baja mod. 11 de Bormujos (Sevilla)</p>
+                                <a href="https://maps.app.goo.gl/gmcwyzF4bTuwMSZa6" target="_blank">
+                                    <h3>Bormujos</h3>
+                                    <p>Calle Perú, 49 Edif. Corona Center, planta baja mod. 11 de Bormujos (Sevilla)</p>
+                                </a>
                             </li> 
                             <li>
-                                <h3>Dos Hermanas</h3>
-                                <p>Av. Gabriel Miró, 3 Edif. Wertice, planta 5ª mod. 8B de Dos Hermanas (Sevilla)</p>
+                                <a href="https://maps.app.goo.gl/7YAGqBG8FjB4Lwk28" target="_blank">
+                                    <h3>Dos Hermanas</h3>
+                                    <p>Av. Gabriel Miró, 3 Edif. Wertice, planta 5ª mod. 8B de Dos Hermanas (Sevilla)</p>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -49,8 +55,10 @@
                     <div class="col-12 col-md-6 mt-3 mt-md-0">
                         <ul class="list-unstyled list-group list-group-horizontal d-flex">
                             <li>
-                                <h3>Puerto Banús, Marbella</h3>
-                                <p>Av. de las Naciones Unidas C.C. Cristamar 29660 Puerto Banús (Marbella)</p>
+                                <a href="https://maps.app.goo.gl/Nif6LsQMARmUZsQo7" target="_blank">
+                                    <h3>Puerto Banús, Marbella</h3>
+                                    <p>Av. de las Naciones Unidas C.C. Cristamar 29660 Puerto Banús (Marbella)</p>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -71,8 +79,10 @@
                     <div class="col-12 col-md-6 mt-3 mt-md-0">
                         <ul class="list-unstyled list-group list-group-horizontal d-flex">
                             <li>
-                                <h3>Madrid</h3>
-                                <p>Calle Ayala 4, 28001. Madrid</p>
+                                <a href="https://maps.app.goo.gl/nsJNTtoDDdNE2yi59" target="_blank">
+                                    <h3>Madrid</h3>
+                                    <p>Calle Ayala 4, 28001. Madrid</p>
+                                </a>
                             </li>
                         </ul>
                     </div>

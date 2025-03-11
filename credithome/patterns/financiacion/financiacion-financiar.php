@@ -9,8 +9,8 @@
             <div class="col-12 col-md-6 px-md-5 mt-3">
                 <div class="card">
                     <h4>Contacto financiación</h4>
-                    <div class="d-flex d-inline"><span>Tlfno. </span><a href="tel:+34681854569">+34 681 85 45 69</a></div>
-                    <div class="d-flex d-inline"><span>Mail. </span><a href="mailto:financiacion@credithomerealestate.com">financiacion@credithomerealestate.com</a></div>
+                    <div class="d-flex mt-1"><span>Tlfno. </span><a href="tel:+34681854569">+34 681 85 45 69</a></div>
+                    <div class="d-flex mt-1"><span>Mail. </span><a href="mailto:financiacion@credithomerealestate.com">financiacion@credithomerealestate.com</a></div>
                 </div>
             </div>
         </div>
