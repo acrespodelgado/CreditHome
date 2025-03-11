@@ -10,6 +10,9 @@ defined('ABSPATH') || exit;
 
 <?php get_template_part('sidebar-templates/sidebar', 'footerfull'); ?>
 
+<?php require_once(get_stylesheet_directory() . '/components/oficinas.php'); ?>
+<?php $oficinas = get_oficinas(); ?>
+
 <div class="wrapper" id="wrapper-footer">
     <div class="container">
         <footer class="site-footer" id="colophon">
@@ -32,23 +35,18 @@ defined('ABSPATH') || exit;
 
                 <div class="col-12 col-md-3 mb-3">
                     <h3>Dirección</h3>
-                    <?php 
-                    $direcciones = [
-                        'Sevilla' => 'https://maps.app.goo.gl/gtv47xrss3tU14Sc6 | Av. San Francisco Javier, 9 Edificio Sevilla 2, planta 4, módulo 16',
-                        'Madrid' => 'https://maps.app.goo.gl/nsJNTtoDDdNE2yi59 | Calle Ayala 4, 21001. Madrid',
-                        'Marbella' => 'https://maps.app.goo.gl/Nif6LsQMARmUZsQo7 | Av. de las Naciones Unidas C.C. Cristamar 29660 Puerto Banús',
-                        'Bormujos' => 'https://maps.app.goo.gl/gmcwyzF4bTuwMSZa6 | Calle Perú, 49 Edif. Corona Center, planta baja mod. 11 (Sevilla)',
-                        'Dos Hermanas' => 'https://maps.app.goo.gl/7YAGqBG8FjB4Lwk28 | Av. Gabriel Miró, 3 Edif. Wertice, planta 5ª mod. 8B (Sevilla)'
-                    ];
-
-                    foreach($direcciones as $ciudad => $datos) {
-                        list($url, $direccion) = explode(' | ', $datos);
-                        echo '<div class="mb-2">
-                                <h4>' . $ciudad . '</h4>
-                                <p><a href="' . $url . '" target="_blank">' . $direccion . '</a></p>
-                              </div>';
-                    }
-                    ?>
+                    <?php foreach($oficinas as $oficina): ?>
+                        <div class="mb-2">
+                            <h4><?php echo esc_html($oficina['titulo']); ?></h4>
+                            <p>
+                                <a href="<?php echo esc_url($oficina['enlace']); ?>" 
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                    <?php echo esc_html($oficina['direccion']); ?>
+                                </a>
+                            </p>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
 
                 <div class="col-12 col-md-2 mb-3">
