@@ -15430,6 +15430,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 }
 
 .left {
+  width: 100%;
   position: absolute;
   left: 0;
   padding: 2rem 1rem;
@@ -15638,6 +15639,30 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   transform: translate(-50%, -50%);
   color: #BCA76F;
 }
+#contact-form.black {
+  background: #040404;
+}
+#contact-form.black h3, #contact-form.black .h3 {
+  color: #FFF;
+}
+#contact-form.black .white {
+  color: #FFF;
+  margin-bottom: 0;
+}
+#contact-form.black .wpcf7-checkbox input[type=checkbox] {
+  margin-right: 5px;
+}
+#contact-form.black .wpcf7-checkbox span {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+#contact-form.black .wpcf7-submit {
+  border-radius: 8px;
+}
+#contact-form.black .wpcf7-form-control-wrap[data-name=your-consent] .wpcf7-list-item-label {
+  color: rgba(255, 255, 255, 0.63);
+}
 
 /*
  ** Footer
@@ -15706,52 +15731,48 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 }
 
 /*
- ** Plan Home
+ ** Plan Home, Visión Plan, Financiar Financiación
 */
-#plan {
-  height: 700px;
-}
-#plan .left {
-  width: 700px;
-}
-@media (max-width: 576px) {
-  #plan {
-    height: auto;
-  }
-}
-
 #plan,
-#vision {
+#vision,
+#financiar {
   position: relative;
   background: #E8E6E0;
   padding: 5rem 0;
 }
 #plan .left,
-#vision .left {
+#vision .left,
+#financiar .left {
   top: 0;
 }
 #plan h3, #plan .h3,
 #vision h3,
-#vision .h3 {
+#vision .h3,
+#financiar h3,
+#financiar .h3 {
   font-size: 48px;
   font-weight: 400;
   color: #040404;
   margin-bottom: 3rem;
 }
 #plan p,
-#vision p {
+#vision p,
+#financiar p {
   font-size: 17px;
   font-weight: 400;
   color: #040404;
 }
 @media (max-width: 576px) {
   #plan,
-  #vision {
+  #vision,
+  #financiar {
     padding: 2rem 0;
   }
   #plan h3, #plan .h3,
   #vision h3,
-  #vision .h3 {
+  #vision .h3,
+  #financiar h3,
+  #financiar .h3 {
     margin-top: 2rem;
   }
 }
@@ -15982,21 +16003,18 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   #main-nav {
     padding: 2rem 0;
   }
+  #main-nav .custom-logo-link {
+    max-width: 70px;
+  }
+  #main-nav #navbarNavDropdown {
+    margin-top: 1rem;
+  }
 }
 
 /*
  ** Vision
 */
-#vision {
-  height: 400px;
-}
-#vision .left {
-  width: 400px;
-}
 @media (max-width: 576px) {
-  #vision {
-    height: auto;
-  }
   #vision h3, #vision .h3 {
     margin-bottom: 1rem;
   }
@@ -16358,6 +16376,40 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   #viviendas h3, #viviendas .h3 {
     margin-top: 2rem;
   }
+}
+
+/*
+ ** Financiación
+*/
+#financiar h3, #financiar .h3 {
+  width: 80%;
+}
+#financiar p {
+  width: 80%;
+}
+#financiar .card {
+  background: rgba(0, 0, 0, 0);
+  padding: 15px 2rem;
+  border: 1px solid #BCA76F;
+  border-radius: 16px;
+}
+#financiar .card h4, #financiar .card .h4 {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #040404;
+  border-bottom: 1px solid #BCA76F;
+  margin-bottom: 1rem;
+}
+#financiar .card span, #financiar .card a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #040404;
+  line-height: 1;
+}
+#financiar .card a {
+  font-weight: bold;
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=child-theme.css.map */

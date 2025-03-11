@@ -1,21 +1,10 @@
 /*
- ** Plan Home
+ ** Plan Home, Visión Plan, Financiar Financiación
 */
 
-#plan {
-    height: 700px;
-
-    .left {
-        width: 700px;
-    }
-
-    @media(max-width: 576px) {
-        height: auto;
-    }
-}
-
 #plan,
-#vision {
+#vision,
+#financiar {
     position: relative;
     background: $light;
     padding: 5rem 0;

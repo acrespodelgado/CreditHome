@@ -167,4 +167,41 @@
             }
         }
     }
+
+    &.black {
+        background: $primary;
+
+        h3 {
+            color: $white;
+        }
+
+        .white {
+            color: $white;
+            margin-bottom: 0;
+        }
+
+        .wpcf7-checkbox {
+
+            input[type='checkbox'] {
+                margin-right: 5px;
+            }
+
+            span {
+                display: inline-flex;
+                align-items: center;
+                margin-right: 15px;
+            }
+        }
+        
+        .wpcf7-submit {
+            border-radius: 8px;
+        }
+        
+        .wpcf7-form-control-wrap[data-name='your-consent'] {
+            
+            .wpcf7-list-item-label {
+                color: $transparent-white;
+            }
+        }
+    }
 }

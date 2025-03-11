@@ -1,0 +1,42 @@
+/*
+ ** Financiación
+*/
+
+#financiar {
+
+    h3 {
+        width: 80%;
+    }
+
+    p {
+        width: 80%;
+    }
+
+    .card {
+        background: $transparent;
+        padding: 15px 2rem;
+        border: 1px solid $accent;
+        border-radius: 16px;
+
+        h4 {
+            width: 100%;
+            font-size: 24px;
+            font-weight: 500;
+            color: $primary;
+            border-bottom: 1px solid $accent;
+            margin-bottom: 1rem;
+        }
+
+        span, a {
+            font-size: 14px;
+            font-weight: 300;
+            color: $primary;
+            line-height: 1;
+        }
+
+        a {
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    }
+}

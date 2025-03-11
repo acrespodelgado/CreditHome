@@ -5,12 +5,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="mt-5 mb-3">
-                                <div class="d-flex d-inline-flex">
-                                    <h3 class="me-3">¿Comprar o vender?</h3>
-                                    <button class="btn-form active mx-1" data-form="compra">Quieres encontrar tu vivienda</button>
-                                    <button class="btn-form mx-1" data-form="venta">Quieres vender tu vivienda</button>
-                                </div>
+                            <div class="d-flex d-inline-flex my-5">
+                                <h3 class="me-3">¿Comprar o vender?</h3>
+                                <button class="btn-form active mx-1" data-form="compra">Quieres encontrar tu vivienda</button>
+                                <button class="btn-form mx-1" data-form="venta">Quieres vender tu vivienda</button>
                             </div>
                             
                             <div id="form-compra" class="form-section active">

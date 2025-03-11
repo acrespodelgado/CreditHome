@@ -3,14 +3,8 @@
 */
 
 #vision {
-    height: 400px;
-
-    .left {
-        width: 400px;
-    }
 
     @media (max-width: 576px) {
-        height: auto;
 
         h3 {
             margin-bottom: 1rem;

@@ -39,6 +39,7 @@ a {
 }
 
 .left {
+    width: 100%;
     position: absolute;
     left: 0;
     padding: 2rem 1rem;
@@ -84,7 +85,7 @@ a {
         $container-width: map-get($values, container);
         
         @media (min-width: #{$breakpoint}) {
-            
+
             @if $breakpoint == 1920px {
                 padding-left: calc((1920px - #{$container-width}) / 2);
             } @else {

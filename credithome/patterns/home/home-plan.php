@@ -1,9 +1,9 @@
 <div id="plan">
+    <div class="left">
+        <h2>Un plan para vivir</h2>
+    </div>
     <div class="container">
         <div class="row align-items-center">
-            <div class="left">
-                <h2>Un plan para vivir</h2>
-            </div>
             <div class="col-12 col-md-6">
                 <img src="<?php echo site_url('/img/home_plan.png'); ?>" alt="Un plan para vivir">
             </div>

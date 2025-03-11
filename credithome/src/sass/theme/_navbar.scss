@@ -53,5 +53,13 @@
 
     @media (max-width: 576px) {
         padding: 2rem 0;
+
+        .custom-logo-link {
+            max-width: 70px;
+        }
+
+        #navbarNavDropdown {
+            margin-top: 1rem;
+        }
     }
 }

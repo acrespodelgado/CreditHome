@@ -32,11 +32,10 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 			<div class="col-md-12 content-area p-0" id="primary">
 
 				<main class="site-main" id="main" role="main">
-				<?php echo do_shortcode('[smartslider3 slider="4"]'); ?>
-				<?php include get_stylesheet_directory() . '/patterns/plan/plan-vision.php'; ?>
-				<?php echo do_shortcode('[smartslider3 slider="5"]'); ?>
-				<?php include get_stylesheet_directory() . '/patterns/plan/plan-valores.php'; ?>
-				<?php include get_stylesheet_directory() . '/patterns/plan/plan-oficinas.php'; ?>
+				<?php echo do_shortcode('[smartslider3 slider="6"]'); ?>
+				<?php include get_stylesheet_directory() . '/patterns/financiacion/financiacion-financiar.php'; ?>
+				<?php echo do_shortcode('[smartslider3 slider="7"]'); ?>
+				<?php include get_stylesheet_directory() . '/patterns/contactform/contactform-financiacion.php'; ?>
 				</main>
 
 			</div><!-- #primary -->
@@ -48,5 +47,4 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 </div><!-- #<?php echo $wrapper_id; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- ok. ?> -->
 
 <?php
-include get_stylesheet_directory() . '/patterns/contactform/contactform.php';
 get_footer();
