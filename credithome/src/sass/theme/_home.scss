@@ -1,41 +1,4 @@
 /*
- ** Plan Home, Visión Plan, Financiar Financiación
-*/
-
-#plan,
-#vision,
-#financiar {
-    position: relative;
-    background: $light;
-    padding: 5rem 0;
-
-    .left {
-        top: 0;
-    }
-
-    h3 {
-        font-size: 48px;
-        font-weight: 400;
-        color: $primary;
-        margin-bottom: 3rem;
-    }
-
-    p {
-        font-size: 17px;
-        font-weight: 400;
-        color: $primary;
-    }
-
-    @media(max-width: 576px) {
-        padding: 2rem 0;
-
-        h3 {
-            margin-top: 2rem;
-        }
-    }
-}
-
-/*
  ** Servicios Home
 */
 

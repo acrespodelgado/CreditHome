@@ -6,9 +6,7 @@
                     <h2>Nuestros clientes</h2>
                 </div>
                 <?php
-                    //global $paged;
-                    //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                    
+
                     $args = array(
                         'post_type' => 'opinion',
                         'posts_per_page' => 6,

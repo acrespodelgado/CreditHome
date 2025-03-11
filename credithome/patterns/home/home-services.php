@@ -1,4 +1,4 @@
-<div id="servicios-home">
+<section id="servicios-home">
     <div class="container-fluid">
         <div class="row shadow">
             <div class="col-12 col-md-3 p-0">
@@ -52,4 +52,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

@@ -23,6 +23,18 @@ $headings-font-family: "Crimson Pro", serif;
 $carousel-height: 400px;
 
 $breakpoints: (
+    xs: (
+        point: 0,
+        container: 100%
+    ),
+    sm: (
+        point: 576px,
+        container: 540px
+    ),
+    md: (
+        point: 768px,
+        container: 720px
+    ),
     lg: (
         point: 992px,
         container: 960px
@@ -40,3 +52,30 @@ $breakpoints: (
         container: 1320px
     )
 );
+
+@mixin container-padding {
+
+    @each $name, $values in $breakpoints {
+        $breakpoint: map-get($values, point);
+        $container-width: map-get($values, container);
+        
+        @media (min-width: #{$breakpoint}) {
+
+            @if $breakpoint == 1920px {
+                padding-left: calc((1920px - #{$container-width}) / 2);
+            } @else {
+                padding-left: calc((100vw - #{$container-width}) / 2);
+            }
+        }
+    }
+}
+
+@mixin media-breakpoint($breakpoint) {
+
+    $size: map-get(map-get($breakpoints, $breakpoint), point);
+    
+    @media (min-width: #{$size}) {
+
+        @content;
+    }
+}

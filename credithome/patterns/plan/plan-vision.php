@@ -1,4 +1,4 @@
-<div id="vision">
+<section id="vision">
     <div class="container">
         <div class="row align-items-center">
             <div class="left"></div>
@@ -8,10 +8,10 @@
                 <a href="<?php echo site_url('/contacto'); ?>" class="btn mt-3">Encuentra tu hogar con nosotros</a>
             </div>
             <div class="col-12 col-md-6 px-md-5 mt-3">
-                <p>Somos una empresa comprometida. En Credit Home Real Estate llevamos años ofreciendo los mejores servicios inmobiliarios y financieros a nuestros clientes, garantizando los máximos estándares de calidad.
+                <p>Somos una empresa comprometida. En Credit Home Real Estate llevamos años ofreciendo los mejores servicios inmobiliarios y financieros a nuestros clientes, garantizando los máximos estándares de calidad.
                 <p>Nos caracterizamos por ofrecer un servicio integral de compra, venta y alquiler.</p>
                 <p>Desde la asesoría inmobiliaria a la financiera y por supuesto asesoría legal de todo el proceso.</p>       
             </div>
         </div>
     </div>
-</div>
+</section>

@@ -73,24 +73,46 @@ a {
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-        transform: scale(1.12);
+        transform: scale(1.06);
         filter: brightness(0.9);
+        opacity: 0.63;
     }
 }
 
-@mixin container-padding {
+/*
+ ** Plan Home, Visión Plan, Financiar Financiación, Servicios Clientes
+*/
 
-    @each $name, $values in $breakpoints {
-        $breakpoint: map-get($values, point);
-        $container-width: map-get($values, container);
-        
-        @media (min-width: #{$breakpoint}) {
+#plan,
+#vision,
+#financiar,
+#clientes {
+    position: relative;
+    background: $light;
+    padding: 5rem 0;
 
-            @if $breakpoint == 1920px {
-                padding-left: calc((1920px - #{$container-width}) / 2);
-            } @else {
-                padding-left: calc((100vw - #{$container-width}) / 2);
-            }
+    .left {
+        top: 0;
+    }
+
+    h3 {
+        font-size: 48px;
+        font-weight: 400;
+        color: $primary;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: 400;
+        color: $primary;
+    }
+
+    @media(max-width: 576px) {
+        padding: 2rem 0;
+
+        h3 {
+            margin-top: 2rem;
         }
     }
 }

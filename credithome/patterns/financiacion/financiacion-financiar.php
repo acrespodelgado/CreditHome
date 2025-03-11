@@ -1,4 +1,4 @@
-<div id="financiar">
+<section id="financiar">
     <div class="container">
         <div class="row align-items-center">
             <div class="left"></div>
@@ -15,4 +15,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

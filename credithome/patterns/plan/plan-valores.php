@@ -1,4 +1,4 @@
-<div id="valores">
+<section id="valores">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 mb-5">
@@ -49,4 +49,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

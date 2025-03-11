@@ -1,88 +1,128 @@
 jQuery(document).ready(function($) {
-    $('.btn-form').on('click', function() {
-        // Manejo de botones
-        $('.btn-form').removeClass('active');
-        $(this).addClass('active');
-        
-        // Manejo de formularios
-        const formType = $(this).data('form');
-        $('.form-section').removeClass('active');
-        $(`#form-${formType}`).addClass('active');
-        
-        // Manejo de imágenes
-        if(formType === 'compra') {
-            $('#img-compra').removeClass('d-none');
-            $('#img-venta').addClass('d-none');
-        } else {
-            $('#img-venta').removeClass('d-none');
-            $('#img-compra').addClass('d-none');
-        }
-    });
-
-    function animateNumber($element, end) {
-        $({ Counter: 0 }).animate({
-            Counter: end
-        }, {
-            duration: 2000, // Duración de la animación en milisegundos
-            easing: 'swing',
-            step: function() {
-                $element.text(Math.ceil(this.Counter));
-            },
-            complete: function() {
-                $element.text(end); // Asegura que el número final sea exacto
+    // Función para el manejo de formularios
+    function handleForms() {
+        $('.btn-form').on('click', function() {
+            $('.btn-form').removeClass('active');
+            $(this).addClass('active');
+            
+            const formType = $(this).data('form');
+            $('.form-section').removeClass('active');
+            $(`#form-${formType}`).addClass('active');
+            
+            if(formType === 'compra') {
+                $('#img-compra').removeClass('d-none');
+                $('#img-venta').addClass('d-none');
+            } else {
+                $('#img-venta').removeClass('d-none');
+                $('#img-compra').addClass('d-none');
             }
         });
     }
 
-    // Función para verificar si un elemento está en el viewport
-    function isElementInViewport(el) {
-        const rect = el[0].getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
+    // Función para animación de números
+    function handleNumberAnimations() {
+        function animateNumber($element, end) {
+            if ($element.length === 0) return; // Verificar si el elemento existe
+            
+            $({ Counter: 0 }).animate({
+                Counter: end
+            }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function() {
+                    $element.text(Math.ceil(this.Counter));
+                },
+                complete: function() {
+                    $element.text(end);
+                }
+            });
+        }
 
-    // Función para iniciar las animaciones
-    function startCounters() {
-        if (isElementInViewport($('.nums'))) {
-            animateNumber($('#num-exp'), 20);
-            animateNumber($('#num-prop'), 470);
-            animateNumber($('#num-cli'), 1000);
-            // Removemos el evento scroll una vez que las animaciones han comenzado
-            $(window).off('scroll', startCounters);
+        function isElementInViewport(el) {
+            if (!el || el.length === 0) return false; // Verificar si el elemento existe
+            const rect = el[0].getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function startCounters() {
+            const $nums = $('.nums');
+            if ($nums.length && isElementInViewport($nums)) {
+                const elements = {
+                    exp: $('#num-exp'),
+                    prop: $('#num-prop'),
+                    cli: $('#num-cli')
+                };
+
+                if (elements.exp.length) animateNumber(elements.exp, 20);
+                if (elements.prop.length) animateNumber(elements.prop, 470);
+                if (elements.cli.length) animateNumber(elements.cli, 1000);
+                
+                $(window).off('scroll', startCounters);
+            }
+        }
+
+        // Solo inicializar si existe el elemento .nums
+        if ($('.nums').length) {
+            startCounters();
+            $(window).on('scroll', startCounters);
         }
     }
 
-    // Verificar al cargar la página y en cada scroll
-    startCounters();
-    $(window).on('scroll', startCounters);
+    // Función para smooth scroll
+    function handleSmoothScroll() {
+        $('.nums .btn').on('click', function(e) {
+            e.preventDefault();
+            
+            const href = $(this).attr('href');
+            const idMap = {
+                '/servicios': '#servicios-home',
+                '/propiedades': '#viviendas',
+                '/reseñas': '#opiniones'
+            };
+            
+            const targetId = idMap[href];
+            
+            if (targetId && $(targetId).length) {
+                $('html, body').animate({
+                    scrollTop: $(targetId).offset().top - 20
+                }, 1000);
+            }
+        });
+    }
 
-    // Smooth scroll para los enlaces
-    $('.nums .btn').on('click', function(e) {
-        e.preventDefault(); // Previene el comportamiento por defecto del enlace
-        
-        // Obtiene el href del enlace
-        const href = $(this).attr('href');
-        
-        // Mapeo de URLs a IDs
-        const idMap = {
-            '/servicios': '#servicios-home',
-            '/propiedades': '#viviendas',
-            '/reseñas': '#opiniones'
-        };
-        
-        // Obtiene el ID correspondiente
-        const targetId = idMap[href];
-        
-        if (targetId) {
-            // Realiza el scroll suave
-            $('html, body').animate({
-                scrollTop: $(targetId).offset().top - 20
-            }, 1000); // 1000ms = 1 segundo de duración de la animación
-        }
-    });
+    // Función para manejar FAQs
+    function handleFAQs() {
+        $('.faq-item .faq-header').on('click', function() {
+            const $faqItem = $(this).closest('.faq-item');
+            const $content = $faqItem.find('.faq-content');
+            const $icon = $(this).find('i');
+            
+            // Cerrar otros FAQs
+            $('.faq-item').not($faqItem).removeClass('active')
+                .find('.faq-content').slideUp();
+            $('.faq-item').not($faqItem).find('i')
+                .css('transform', 'rotate(0deg)');
+            
+            // Toggle actual FAQ
+            $faqItem.toggleClass('active');
+            if ($faqItem.hasClass('active')) {
+                $content.slideDown();
+                $icon.css('transform', 'rotate(180deg)');
+            } else {
+                $content.slideUp();
+                $icon.css('transform', 'rotate(0deg)');
+            }
+        });
+    }
 
+    // Inicializar todas las funcionalidades
+    handleForms();
+    handleNumberAnimations();
+    handleSmoothScroll();
+    handleFAQs();
 });

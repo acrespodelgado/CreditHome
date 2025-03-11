@@ -1,4 +1,4 @@
-<div id="plan">
+<section id="plan">
     <div class="left">
         <h2>Un plan para vivir</h2>
     </div>
@@ -14,4 +14,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

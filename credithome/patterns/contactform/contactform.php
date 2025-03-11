@@ -1,4 +1,4 @@
-<div id="contact-form">
+<section id="contact-form">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-7">
@@ -30,4 +30,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

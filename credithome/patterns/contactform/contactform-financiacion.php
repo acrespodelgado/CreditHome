@@ -1,4 +1,4 @@
-<div id="contact-form" class="black">
+<section id="contact-form" class="black">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -13,4 +13,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>
