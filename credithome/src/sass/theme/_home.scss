@@ -209,6 +209,20 @@
         }
     }
 
+    @media(max-width: 1199px) {
+        height: auto;
+        min-height: 500px;
+
+        #opinionCarousel {
+            height: auto;
+            min-height: 500px;
+
+            p {
+                max-width: 80%;
+            }
+        }
+    }
+
     @media(max-width: 991px) {
         height: auto;
         min-height: 600px;

@@ -1,7 +1,7 @@
 <section id="servicios-home">
     <div class="container-fluid">
         <div class="row shadow">
-            <div class="col-12 col-sm-6 col-lg-3 p-0 servicio">
+            <div class="col-12 col-sm-6 col-xl-3 p-0 servicio">
                 <img src="<?php echo site_url('/img/servicios_home_1.png'); ?>" alt="Servicios Asesoría Inmobiliaria" class="zoom" />
                 <div class="icono">
                     <div class="blur">
@@ -10,7 +10,7 @@
                     <h5>Asesoría inmobiliaria y estudio de mercado</h5>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 p-0 servicio">
+            <div class="col-12 col-sm-6 col-xl-3 p-0 servicio">
                 <img src="<?php echo site_url('/img/servicios_home_2.png'); ?>" alt="Servicios Asesoría Financiera" class="zoom" />
                 <div class="icono">
                     <div class="blur">
@@ -19,7 +19,7 @@
                     <h5>Asesoría financiera para la compra</h5>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 p-0 servicio">
+            <div class="col-12 col-sm-6 col-xl-3 p-0 servicio">
                 <img src="<?php echo site_url('/img/servicios_home_3.png'); ?>" alt="Servicios Asesoramiento Legal" class="zoom" />
                 <div class="icono">
                     <div class="blur">
@@ -28,7 +28,7 @@
                     <h5>Asesoramiento legal</h5>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 p-0 servicio">
+            <div class="col-12 col-sm-6 col-xl-3 p-0 servicio">
                 <img src="<?php echo site_url('/img/servicios_home_4.png'); ?>" alt="Servicios Gestión Integral" class="zoom" />
                 <div class="icono">
                     <div class="blur">
