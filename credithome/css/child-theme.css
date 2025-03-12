@@ -15536,7 +15536,12 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #not-found h1, #not-found .h1,
 #error-404-wrapper h1,
 #error-404-wrapper .h1 {
+  text-transform: uppercase;
   margin-top: 3rem;
+}
+#not-found p,
+#error-404-wrapper p {
+  font-size: 18px;
 }
 
 /*

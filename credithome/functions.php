@@ -82,6 +82,7 @@ add_filter( 'theme_mod_understrap_bootstrap_version', 'understrap_default_bootst
 /**
  * Loads javascript for showing customizer warning dialog.
  */
+
 function understrap_child_customize_controls_js() {
 	wp_enqueue_script(
 		'understrap_child_customizer',
@@ -96,6 +97,7 @@ add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_co
 /**
  * Menú en footer
  */
+
 function register_my_menus() {
     register_nav_menus(
         array(
