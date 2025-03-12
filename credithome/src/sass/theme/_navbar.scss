@@ -38,7 +38,23 @@
         max-width: 120px;
     }
 
+    /* Icono búsqueda */
+    .search {
+
+        &::before {
+            font-family: "FontAwesome";
+            color: $white;
+            content: "\f002"; /* Ícono de lupa en FA4 */
+            font-size: 18px;
+            display: inline-block;
+            margin-right: 0;
+            cursor: pointer;
+        }
+    }
+
     #main-menu {
+        align-items: center;
+
         li {
             margin: 0 1.25rem;
 
@@ -55,7 +71,7 @@
         }
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 767px) {
         padding: 2rem 0;
 
         .custom-logo-link {
@@ -64,6 +80,25 @@
 
         #navbarNavDropdown {
             margin-top: 1rem;
+        }
+
+        .featured {
+            background: $transparent;
+            -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        .featured {
+            padding: 10px 30px;
+            border: 1px solid $accent;
+            border-radius: 32px;
+        }
+
+        .featured.active {
+            background: $accent;
         }
     }
 }

@@ -28,10 +28,10 @@ $oficinas_agrupadas = [
             <!-- Oficinas Sevilla -->
             <div class="col-12 oficina mb-5">
                 <div class="row">
-                    <div class="col-12 col-md-4">
-                        <img src="<?php echo site_url('/img/oficina_sevilla.png'); ?>" alt="Imagen Sevilla" class="zoom">
+                    <div class="col-12 col-lg-4">
+                        <img src="<?php echo site_url('/img/oficina_sevilla.png'); ?>" alt="Imagen Sevilla" class="w-100 img-responsive zoom">
                     </div>
-                    <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
                         <ul class="list-unstyled list-group d-flex">
                             <?php foreach ($oficinas_agrupadas['sevilla'] as $oficina): ?>
                                 <li>
@@ -43,7 +43,7 @@ $oficinas_agrupadas = [
                             <?php endforeach; ?>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-2">
+                    <div class="col-12 col-lg-2">
                         <ul class="list-unstyled list-group d-flex">
                             <?php foreach ($oficinas_agrupadas['sevilla'] as $oficina): ?>
                                 <li>
@@ -58,10 +58,10 @@ $oficinas_agrupadas = [
             <!-- Oficinas Málaga -->
             <div class="col-12 oficina mb-5">
                 <div class="row">
-                    <div class="col-12 col-md-4">
-                        <img src="<?php echo site_url('/img/oficina_malaga.png'); ?>" alt="Imagen Málaga" class="zoom">
+                    <div class="col-12 col-lg-4">
+                        <img src="<?php echo site_url('/img/oficina_malaga.png'); ?>" alt="Imagen Málaga" class="w-100 img-responsive zoom">
                     </div>
-                    <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
                         <ul class="list-unstyled list-group d-flex">
                             <?php foreach ($oficinas_agrupadas['malaga'] as $oficina): ?>
                                 <li>
@@ -73,7 +73,7 @@ $oficinas_agrupadas = [
                             <?php endforeach; ?>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-2">
+                    <div class="col-12 col-lg-2">
                         <ul class="list-unstyled list-group d-flex">
                             <?php foreach ($oficinas_agrupadas['malaga'] as $oficina): ?>
                                 <li>
@@ -88,10 +88,10 @@ $oficinas_agrupadas = [
             <!-- Oficinas Madrid -->
             <div class="col-12 oficina mb-5">
                 <div class="row">
-                    <div class="col-12 col-md-4">
-                        <img src="<?php echo site_url('/img/oficina_madrid.png'); ?>" alt="Imagen Madrid" class="zoom">
+                    <div class="col-12 col-lg-4">
+                        <img src="<?php echo site_url('/img/oficina_madrid.png'); ?>" alt="Imagen Madrid" class="w-100 img-responsive zoom">
                     </div>
-                    <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <div class="col-12 col-lg-6 mt-3 mt-lg-0">
                         <ul class="list-unstyled list-group d-flex">
                             <?php foreach ($oficinas_agrupadas['madrid'] as $oficina): ?>
                                 <li>
@@ -103,7 +103,7 @@ $oficinas_agrupadas = [
                             <?php endforeach; ?>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-2">
+                    <div class="col-12 col-lg-2">
                         <ul class="list-unstyled list-group d-flex">
                             <?php foreach ($oficinas_agrupadas['madrid'] as $oficina): ?>
                                 <li>

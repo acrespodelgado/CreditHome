@@ -15442,7 +15442,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 .left.gold {
   border-bottom: 1px solid #BCA76F;
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   .left {
     width: 100% !important;
     position: relative;
@@ -15506,7 +15506,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   font-weight: 400;
   color: #040404;
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   #plan,
   #vision,
   #financiar,
@@ -15542,6 +15542,50 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #not-found p,
 #error-404-wrapper p {
   font-size: 18px;
+}
+
+/*
+ ** Search Wrapper
+*/
+#search-wrapper {
+  background: #040404;
+  color: #FFF;
+}
+#search-wrapper h1, #search-wrapper .h1 {
+  color: #BCA76F;
+  text-transform: uppercase;
+}
+#search-wrapper a {
+  color: rgba(255, 255, 255, 0.63);
+}
+#search-wrapper a.btn, #search-wrapper .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #search-wrapper a.button, #search-wrapper .woocommerce-info a.button, .woocommerce-info #search-wrapper a.button {
+  color: #FFF;
+}
+#search-wrapper .search-form {
+  margin-bottom: 5rem;
+}
+#search-wrapper .search-form .submit {
+  background: #BCA76F;
+  border: 1px solid #BCA76F;
+}
+#search-wrapper .entry-summary {
+  margin: 1.5rem 0;
+}
+#search-wrapper .pagination {
+  margin-top: 3rem;
+}
+#search-wrapper .pagination .page-item {
+  border: 1px solid #BCA76F;
+}
+#search-wrapper .pagination .page-item .page-link {
+  background: #BCA76F;
+  color: #040404;
+  border: 1px solid #BCA76F;
+  border-radius: 0px;
+}
+#search-wrapper .pagination .page-item.active .page-link {
+  background: #040404;
+  color: #FFF;
 }
 
 /*
@@ -15862,6 +15906,13 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #contact-form-sell.black .wpcf7-form-control-wrap[data-name=your-consent] .wpcf7-list-item-label {
   color: rgba(255, 255, 255, 0.63);
 }
+@media (max-width: 991px) {
+  #contact-form .col-lg-7 .container,
+  #contact-form-buy .col-lg-7 .container,
+  #contact-form-sell .col-lg-7 .container {
+    padding-left: 15px !important;
+  }
+}
 
 #contact-form-buy h3, #contact-form-buy .h3,
 #contact-form-sell h3,
@@ -15956,11 +16007,11 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   height: auto;
   display: block;
 }
-#servicios-home .shadow .col-md-3 {
+#servicios-home .shadow .servicio {
   position: relative;
   overflow: hidden;
 }
-#servicios-home .shadow .col-md-3 .icono {
+#servicios-home .shadow .servicio .icono {
   width: 100%;
   height: 120px;
   padding: 10px 15px;
@@ -15971,17 +16022,17 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   flex-direction: column;
   z-index: 2;
 }
-#servicios-home .shadow .col-md-3 .icono .blur {
+#servicios-home .shadow .servicio .icono .blur {
   margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.63);
   border-radius: 16px;
   padding: 10px 25px;
 }
-#servicios-home .shadow .col-md-3 .icono .blur img {
+#servicios-home .shadow .servicio .icono .blur img {
   width: 50px;
   height: 50px;
 }
-#servicios-home .shadow .col-md-3 .icono h5, #servicios-home .shadow .col-md-3 .icono .h5 {
+#servicios-home .shadow .servicio .icono h5, #servicios-home .shadow .servicio .icono .h5 {
   font-size: 32px;
   font-weight: 400;
   color: #FFF;
@@ -16010,7 +16061,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   background: #BCA76F;
   color: #040404;
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   #servicios-home .black-section p {
     margin-top: 2rem;
   }
@@ -16099,7 +16150,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #opiniones #opinionCarousel .carousel-control-next {
   right: 0;
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   #opiniones {
     height: auto;
     min-height: 600px;
@@ -16147,9 +16198,22 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   background-color: rgba(0, 0, 0, 0) !important;
   padding: 1rem 2rem;
   margin-top: 35px;
+  /* Icono búsqueda */
 }
 #main-nav .custom-logo-link {
   max-width: 120px;
+}
+#main-nav .search::before {
+  font-family: "FontAwesome";
+  color: #FFF;
+  content: "\f002"; /* Ícono de lupa en FA4 */
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 0;
+  cursor: pointer;
+}
+#main-nav #main-menu {
+  align-items: center;
 }
 #main-nav #main-menu li {
   margin: 0 1.25rem;
@@ -16160,7 +16224,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #main-nav #main-menu li.active a {
   border-bottom: 1px solid #BCA76F;
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   #main-nav {
     padding: 2rem 0;
   }
@@ -16169,6 +16233,21 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   }
   #main-nav #navbarNavDropdown {
     margin-top: 1rem;
+  }
+  #main-nav .featured {
+    background: rgba(0, 0, 0, 0);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+@media (min-width: 768px) {
+  #main-nav .featured {
+    padding: 10px 30px;
+    border: 1px solid #BCA76F;
+    border-radius: 32px;
+  }
+  #main-nav .featured.active {
+    background: #BCA76F;
   }
 }
 
@@ -16227,7 +16306,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #valores ul .blur img {
   margin: 0 auto;
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   #valores ul {
     text-align: center;
     justify-content: center;
@@ -16235,6 +16314,10 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   #valores ul .blur {
     position: inherit;
     margin: 15px auto;
+  }
+  #valores ul p {
+    width: 70%;
+    margin: 1rem auto;
   }
 }
 
@@ -16320,7 +16403,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   text-align: center;
   line-height: 1.2;
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   #oficinas {
     padding: 3rem 0;
   }
@@ -16421,6 +16504,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 
 #viviendas {
   background: #040404;
+  padding: 3rem 0;
 }
 #viviendas h3, #viviendas .h3 {
   font-size: 28px;
@@ -16549,7 +16633,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   border: 1px solid #BCA76F;
   border-radius: 32px;
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   #viviendas h3, #viviendas .h3 {
     margin-top: 2rem;
   }
@@ -16717,7 +16801,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #clientes .col-md-7 .blur img {
   margin: 0 auto;
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   #clientes .blur {
     display: none !important;
   }
@@ -16817,6 +16901,11 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #dudas .faq-item.active .fa-long-arrow-up {
   transform: rotate(180deg);
 }
+@media (max-width: 991px) {
+  #dudas .col-lg-7 .container {
+    padding-left: 15px !important;
+  }
+}
 
 /*
  ** Pasos
@@ -16896,7 +16985,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   font-weight: bold;
   margin-left: 5px;
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   #contacto-cards {
     display: block;
   }

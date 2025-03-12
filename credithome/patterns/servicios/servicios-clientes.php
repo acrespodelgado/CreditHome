@@ -42,7 +42,7 @@
     <div class="left"></div>
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-12 col-md-6 mb-3">
+            <div class="col-12 col-lg-6 mb-3">
                 <h3>Nuestros servicios al<br><span class="dark-gold">servicio del cliente</span></h3>
                 <p>En Credit Home Real Estate, ofrecemos una gama de servicios diseñados para acompañarte en cada etapa del proceso inmobiliario, asegurando que tu experiencia sea lo más fluida y satisfactoria posible. Nuestro compromiso es hacer que el proceso de compra, venta, financiación y gestión de propiedades sea sencillo, transparente y sin sorpresas.</p>
             </div>
@@ -50,11 +50,11 @@
 
         <?php foreach ($servicios as $servicio): ?>
         <div class="row align-items-center mt-5">
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-sm-6 col-lg-5">
                 <img src="<?php echo site_url('/img/' . $servicio['imagen']); ?>" 
                         alt="<?php echo $servicio['alt']; ?>" class="zoom" />
             </div>
-            <div class="col-12 col-md-7 mt-3 mt-md-0">
+            <div class="col-12 col-sm-6 col-lg-7 mt-3 mt-lg-0">
                 <img src="<?php echo site_url('/img/' . $servicio['icono']); ?>" 
                         alt="Icono <?php echo $servicio['alt']; ?>" class="blur" />
                 <h4><?php echo $servicio['titulo']; ?></h4>

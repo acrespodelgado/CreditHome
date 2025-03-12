@@ -4,7 +4,7 @@
             <div class="col-12 col-lg-7">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 p-0">
                             <div class="d-flex d-inline-flex my-5">
                                 <h3 class="me-3">¿Comprar o vender?</h3>
                                 <button class="btn-form active mx-1" data-form="compra">Quieres encontrar tu vivienda</button>

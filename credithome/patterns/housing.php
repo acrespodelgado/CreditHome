@@ -1,7 +1,7 @@
 <div id="viviendas">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-12 col-md-6 mt-3">
+            <div class="col-12 col-md-6">
                 <h3 class="mb-0">Encuentra tu casa con nosotros,</h3>
                 <h4 class="mb-0">Algunas de nuestras propiedades en venta o alquiler.</h4>
             </div>
@@ -11,6 +11,8 @@
                     <span class="separator mx-3">|</span><p class="mb-0">*Somos la inmobiliaria nº1 en idealista</p>
                 </div>
             </div>
+        </div>
+        <div class="row mt-5">
             <?php
                 global $paged;
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -28,15 +30,13 @@
                 $query = new WP_Query( $args );
 
                 if ( $query->have_posts() ) : ?>
-                    <div class="mt-3 posts">
-                        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                                <div class="col-xs-12 col-md-4 post">
-                                    <?php get_template_part( 'loop-templates/content-vivienda', get_post_format() ); ?>	
-                                </div>
-                        <?php endwhile; ?>
-                    </div>
+                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                            <div class="col-xs-12 col-sm-6 col-lg-4 post">
+                                <?php get_template_part( 'loop-templates/content-vivienda', get_post_format() ); ?>	
+                            </div>
+                    <?php endwhile; ?>
                     <?php if (!$is_viviendas_page) : ?>
-                        <div class="col-12 col-md-4 offset-md-4 my-5 text-center">
+                        <div class="col-12 my-5 text-center">
                             <a href="<?php echo site_url('/vivienda'); ?>" class="btn btn-dark">Ver todas las viviendas</a>
                         </div>
                     <?php endif; ?>

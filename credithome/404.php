@@ -34,7 +34,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<div class="page-content">
 
-							<p><?php esc_html_e( 'It looks like nothing was found at this location.', 'understrap' ); ?></p>
+							<p><?php esc_html_e( 'Parece que la página que está buscando no existe.', 'understrap' ); ?></p>
+							<?php get_search_form(); ?>
 
 						</div><!-- .page-content -->
 

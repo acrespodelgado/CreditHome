@@ -26,7 +26,7 @@
 <section id="dudas">
     <div class="container-fluid p-0">
         <div class="row">
-            <div class="col-12 col-lg-7 pe-5 pb-3">
+            <div class="col-12 col-lg-7 pe-lg-5 pb-3">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 my-5">

@@ -52,7 +52,7 @@ a {
         border-bottom: 1px solid $gold;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 991px) {
         width: 100% !important;
         position: relative;
         padding: 1rem 0;
@@ -108,31 +108,11 @@ a {
         color: $primary;
     }
 
-    @media(max-width: 576px) {
+    @media(max-width: 767px) {
         padding: 2rem 0;
 
         h3 {
             margin-top: 2rem;
         }
-    }
-}
-
-/*
- ** Sin resultados
-*/
-
-#not-found,
-#error-404-wrapper {
-    background: $primary;
-    color: $white;
-    padding: 0 0 5rem 0;
-
-    h1 {
-        text-transform: uppercase;
-        margin-top: 3rem;
-    }
-
-    p {
-        font-size: 18px;
     }
 }

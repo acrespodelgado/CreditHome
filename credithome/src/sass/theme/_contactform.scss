@@ -206,6 +206,13 @@
             }
         }
     }
+
+    @media (max-width: 991px) {
+        
+        .col-lg-7 .container {
+            padding-left: 15px !important;
+        }
+    }
 }
 
 #contact-form-buy,

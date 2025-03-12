@@ -37,7 +37,7 @@
         }
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 991px) {
 
         .blur {
             display: none !important;
@@ -124,6 +124,13 @@
             .fa-long-arrow-up {
                 transform: rotate(180deg);
             }
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        .col-lg-7 .container {
+            padding-left: 15px !important;
         }
     }
 }

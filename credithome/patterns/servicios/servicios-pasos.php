@@ -31,7 +31,7 @@
 <section id="pasos">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-12 col-md-6 mb-5">
+            <div class="col-12 col-lg-6 mb-5">
                 <h2>Pasos para comprar tu propiedad<br><span class="gold">con Credit Home Real Estate</span></h2>
                 <p>Contáctanos, tenemos la solución. Nuestro equipo se asegura de ofrecerte la tranquilidad y seguridad que buscas en tu hipoteca. Entendemos que es algo que preocupa a muchas personas, por eso desde Credit Home Real Estate nos comprometemos con el propósito de ofrecerle la opción a la medida de sus necesidades.</h3>
             </div>

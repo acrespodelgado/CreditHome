@@ -67,7 +67,7 @@
         }
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 991px) {
 
         ul {
             text-align: center;
@@ -76,6 +76,11 @@
             .blur {
                 position: inherit;
                 margin: 15px auto;
+            }
+
+            p {
+                width: 70%;
+                margin: 1rem auto;
             }
         }
     }
@@ -183,7 +188,7 @@
         }    
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 767px) {
         padding: 3rem 0;
 
         .oficina {

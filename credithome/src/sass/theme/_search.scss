@@ -1,0 +1,77 @@
+/*
+ ** Sin resultados
+*/
+
+#not-found,
+#error-404-wrapper {
+    background: $primary;
+    color: $white;
+    padding: 0 0 5rem 0;
+
+    h1 {
+        text-transform: uppercase;
+        margin-top: 3rem;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+/*
+ ** Search Wrapper
+*/
+
+#search-wrapper {
+    background: $primary;
+    color: $white;
+
+    h1 {
+        color: $accent;
+        text-transform: uppercase;
+    }
+
+    a {
+        color: $transparent-white;
+
+        &.btn {
+            color: $white;
+        }
+    }
+
+    .search-form {
+        margin-bottom: 5rem;
+
+        .submit {
+            background: $accent;
+            border: 1px solid $accent;
+        }
+    }
+
+    .entry-summary {
+        margin: 1.5rem 0;
+    }
+
+    .pagination {
+        margin-top: 3rem;
+        
+        .page-item {
+            border: 1px solid $accent;
+
+            .page-link {
+                background: $accent;
+                color: $primary;
+                border: 1px solid $accent;
+                border-radius: 0px;
+            }
+
+            &.active {
+
+                .page-link {
+                    background: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

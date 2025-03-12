@@ -80,7 +80,7 @@
 					<?php $count = 1; ?>
 					<?php while(get_field('imagen_adicional_' . $count)): ?>
 							<div class="img-wrapper">
-								<img src="<?php echo get_field('imagen_adicional_' . $count)['url']; ?>" alt="Imagen <?php echo $count; ?>">
+								<img src="<?php echo get_field('imagen_adicional_' . $count)['url']; ?>" alt="Imagen <?php echo $count; ?>" class="img-responsive zoom">
 							</div>
 						<?php $count++; ?>
 					<?php endwhile; ?>

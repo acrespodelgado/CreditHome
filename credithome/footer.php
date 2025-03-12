@@ -18,7 +18,7 @@ defined('ABSPATH') || exit;
         <footer class="site-footer" id="colophon">
             <div class="row">
 
-                <div class="col-12 col-md-3 mb-3">
+                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                     <div class="mb-5">
                         <h3>Email</h3>
                         <a href="mailto:info@credithomerealestate.com">info@credithomerealestate.com</a>
@@ -33,7 +33,7 @@ defined('ABSPATH') || exit;
                     </div>
                 </div>
 
-                <div class="col-12 col-md-3 mb-3">
+                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                     <h3>Dirección</h3>
                     <?php foreach($oficinas as $oficina): ?>
                         <div class="mb-2">
@@ -49,7 +49,7 @@ defined('ABSPATH') || exit;
                     <?php endforeach; ?>
                 </div>
 
-                <div class="col-12 col-md-2 mb-3">
+                <div class="col-12 col-sm-6 col-lg-2 mb-3">
                     <h3>Links</h3>
                     <?php
                     wp_nav_menu([
@@ -63,7 +63,7 @@ defined('ABSPATH') || exit;
                     ?>
                 </div>
 
-                <div class="col-12 col-md-4 mb-3">
+                <div class="col-12 col-sm-6 col-lg-4 mb-3">
                     <h2>CREDIT HOME REAL ESTATE & FINANCE</h2>
                     <p>Profesionalismo y dedicación para que tu visión se convierta en realidad.</p>
                     <div class="mt-5">

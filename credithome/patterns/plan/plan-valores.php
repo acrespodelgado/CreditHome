@@ -5,10 +5,10 @@
                 <h2>Nuestros valores</h2>
                 <h3>Si algo nos caracteriza, son nuestros valores: Innovación, Transparencia, Compromiso, Profesionalismo y Colaboración.</h3>
             </div>
-            <div class="col-12 col-md-6 mb-3">
+            <div class="col-12 col-lg-6 mb-3">
                 <img src="<?php echo site_url('/img/valores.png'); ?>" alt="Nuestros valores" class="img-responsive zoom">
             </div>
-            <div class="col-12 col-md-6 mb-3 px-md-5">
+            <div class="col-12 col-lg-6 mb-3 px-lg-5">
                 <ul class="list-unstyled list-group d-flex">
                     <li>
                         <div class="blur">
