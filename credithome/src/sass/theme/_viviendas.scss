@@ -165,3 +165,117 @@
         }
     }
 }
+
+/*
+ ** Vivienda Single
+*/
+
+#single-wrapper-vivienda {
+    padding: 0;
+
+    .vivienda-single {
+        background: $primary;
+        color: $white;
+        overflow: hidden;
+        margin-bottom: 0;
+    
+        .banner {
+            height: 600px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        ul {
+            display: grid;
+            grid-auto-flow: column;
+            grid-gap: 20px;
+            align-items: start;
+            
+            li {
+                display: grid;
+                grid-template-rows: auto auto; // Una fila para el icono, otra para el texto
+                justify-items: center;
+                gap: 8px;
+                
+                .img-wrapper {
+                    padding: 2px 12px;
+                    background: $grey;
+                    border: 1px solid $transparent-white;
+                    border-radius: 12px;
+                    img {
+                        width: 24px; // Asegura que todos los iconos tengan el mismo tamaño
+                        height: 24px;
+                        object-fit: contain;
+                    }
+                }
+                
+                span {
+                    display: block;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: $white;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            opacity: 0.83;
+        }
+
+        .data-container {
+            position: relative;
+
+            .location, 
+            .price {
+                padding: 0px 15px;
+                border: 1px solid $transparent-white;
+                border-radius: 32px;
+
+                i {
+                    font-size: 16px;
+                    color: $accent;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $white;
+                }
+            }
+
+            .price {
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            img {
+                border-radius: 16px;
+            }
+        }
+
+        .btn-dark {
+            background: $grey;
+            color: $white;
+        }
+    }
+}

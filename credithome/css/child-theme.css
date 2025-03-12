@@ -16148,6 +16148,9 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   padding: 1rem 2rem;
   margin-top: 35px;
 }
+#main-nav .custom-logo-link {
+  max-width: 120px;
+}
 #main-nav #main-menu li {
   margin: 0 1.25rem;
 }
@@ -16550,6 +16553,103 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   #viviendas h3, #viviendas .h3 {
     margin-top: 2rem;
   }
+}
+
+/*
+ ** Vivienda Single
+*/
+#single-wrapper-vivienda {
+  padding: 0;
+}
+#single-wrapper-vivienda .vivienda-single {
+  background: #040404;
+  color: #FFF;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+#single-wrapper-vivienda .vivienda-single .banner {
+  height: 600px;
+}
+#single-wrapper-vivienda .vivienda-single .banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+#single-wrapper-vivienda .vivienda-single ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  align-items: start;
+}
+#single-wrapper-vivienda .vivienda-single ul li {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  gap: 8px;
+}
+#single-wrapper-vivienda .vivienda-single ul li .img-wrapper {
+  padding: 2px 12px;
+  background: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.63);
+  border-radius: 12px;
+}
+#single-wrapper-vivienda .vivienda-single ul li .img-wrapper img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+#single-wrapper-vivienda .vivienda-single ul li span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFF;
+}
+#single-wrapper-vivienda .vivienda-single h1, #single-wrapper-vivienda .vivienda-single .h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+#single-wrapper-vivienda .vivienda-single h2, #single-wrapper-vivienda .vivienda-single .h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+#single-wrapper-vivienda .vivienda-single p {
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.83;
+}
+#single-wrapper-vivienda .vivienda-single .data-container {
+  position: relative;
+}
+#single-wrapper-vivienda .vivienda-single .data-container .location,
+#single-wrapper-vivienda .vivienda-single .data-container .price {
+  padding: 0px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.63);
+  border-radius: 32px;
+}
+#single-wrapper-vivienda .vivienda-single .data-container .location i,
+#single-wrapper-vivienda .vivienda-single .data-container .price i {
+  font-size: 16px;
+  color: #BCA76F;
+  margin-right: 10px;
+}
+#single-wrapper-vivienda .vivienda-single .data-container .location span,
+#single-wrapper-vivienda .vivienda-single .data-container .price span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFF;
+}
+#single-wrapper-vivienda .vivienda-single .data-container .price span {
+  font-weight: bold;
+}
+#single-wrapper-vivienda .vivienda-single .data-container img {
+  border-radius: 16px;
+}
+#single-wrapper-vivienda .vivienda-single .btn-dark {
+  background: #171717;
+  color: #FFF;
 }
 
 /*

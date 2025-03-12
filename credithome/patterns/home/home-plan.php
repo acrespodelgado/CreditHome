@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-md-6">
-                <img src="<?php echo site_url('/img/home_plan.png'); ?>" alt="Un plan para vivir">
+                <img src="<?php echo site_url('/img/home_plan.png'); ?>" alt="Un plan para vivir" class="img-responsive zoom">
             </div>
             <div class="col-12 col-md-6 px-md-5">
                 <h3>Nuestro compromiso con <span class="dark-gold">tu plan de vida</span></h3>

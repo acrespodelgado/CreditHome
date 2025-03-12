@@ -24,6 +24,8 @@ defined( 'ABSPATH' ) || exit;
 				<div class="page-content">
 					<?php
 					if ( is_search() ) :
+						echo do_shortcode('[smartslider3 slider="5"]');
+						
 						printf(
 							'<p>%s<p>',
 							esc_html__( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'understrap' )
