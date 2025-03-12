@@ -6744,7 +6744,7 @@
 	})();
 
 	jQuery(document).ready(function ($) {
-	  // Función para el manejo de formularios
+	  // Función para cambiar entre formularios
 	  function handleForms() {
 	    $('.btn-form').on('click', function () {
 	      $('.btn-form').removeClass('active');
@@ -6850,12 +6850,41 @@
 	      }
 	    });
 	  }
+	  function handleNavbar() {
+	    const $navbar = $('#main-nav');
+	    if ($navbar.hasClass('transparent')) {
+	      $(window).scroll(function () {
+	        if ($(window).scrollTop() > 0) {
+	          $navbar.removeClass('transparent');
+	        } else {
+	          $navbar.addClass('transparent');
+	        }
+	      });
+	    }
+	  }
+	  function handleHamburgerMenu() {
+	    var $hamburger = $(".hamburger");
+	    var $navbar = $('#main-nav');
+	    $hamburger.on("click", function (e) {
+	      $hamburger.toggleClass("is-active");
+	      if ($hamburger.hasClass("is-active")) {
+	        $('#myNav').css("width", "100%");
+	        $('body').css('overflow', 'hidden');
+	        $navbar.removeClass('transparent');
+	      } else {
+	        $('#myNav').css("width", "0%");
+	        $('body').css('overflow', 'auto');
+	      }
+	    });
+	  }
 
 	  // Inicializar todas las funcionalidades
 	  handleForms();
 	  handleNumberAnimations();
 	  handleSmoothScroll();
 	  handleFAQs();
+	  handleNavbar();
+	  handleHamburgerMenu();
 	});
 
 	exports.Alert = alert;

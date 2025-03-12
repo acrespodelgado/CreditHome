@@ -11,6 +11,8 @@
 @import "assets/understrap/theme/blocks";           // <-------- This adds Bootstrap styles to blocks.
 @import "assets/understrap/theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
 
+@import "assets/hamburgers/hamburgers";             // <-------- Menú de hamburguesa custom
+
 // Importaciones del tema
 @import "theme/child_theme";                             // <------- Add your styles into this file
 @import "theme/search";
@@ -18,6 +20,7 @@
 @import "theme/footer";
 @import "theme/home";
 @import "theme/navbar";
+@import "theme/hamburgers";
 @import "theme/plan";
 @import "theme/sliders";
 @import "theme/viviendas";

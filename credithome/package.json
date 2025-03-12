@@ -67,5 +67,8 @@
     "sass": "^1.56.0",
     "terser": "^5.15.1",
     "understrap": "github:understrap/understrap#develop"
+  },
+  "dependencies": {
+    "hamburgers": "^1.2.1"
   }
 }
