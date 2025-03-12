@@ -36,7 +36,7 @@ $oficinas_agrupadas = [
                             <?php foreach ($oficinas_agrupadas['sevilla'] as $oficina): ?>
                                 <li>
                                     <a href="<?php echo esc_url($oficina['enlace']); ?>" target="_blank" rel="noopener noreferrer">
-                                        <h3><?php echo esc_html($oficina['titulo']); ?></h3>
+                                        <h4><?php echo esc_html($oficina['titulo']); ?></h4>
                                         <p><?php echo esc_html($oficina['direccion']); ?></p>
                                     </a>
                                 </li>
@@ -66,7 +66,7 @@ $oficinas_agrupadas = [
                             <?php foreach ($oficinas_agrupadas['malaga'] as $oficina): ?>
                                 <li>
                                     <a href="<?php echo esc_url($oficina['enlace']); ?>" target="_blank" rel="noopener noreferrer">
-                                        <h3><?php echo esc_html($oficina['titulo']); ?></h3>
+                                        <h4><?php echo esc_html($oficina['titulo']); ?></h4>
                                         <p><?php echo esc_html($oficina['direccion']); ?></p>
                                     </a>
                                 </li>
@@ -96,7 +96,7 @@ $oficinas_agrupadas = [
                             <?php foreach ($oficinas_agrupadas['madrid'] as $oficina): ?>
                                 <li>
                                     <a href="<?php echo esc_url($oficina['enlace']); ?>" target="_blank" rel="noopener noreferrer">
-                                        <h3><?php echo esc_html($oficina['titulo']); ?></h3>
+                                        <h4><?php echo esc_html($oficina['titulo']); ?></h4>
                                         <p><?php echo esc_html($oficina['direccion']); ?></p>
                                     </a>
                                 </li>

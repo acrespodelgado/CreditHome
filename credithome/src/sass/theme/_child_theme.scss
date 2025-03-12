@@ -116,3 +116,18 @@ a {
         }
     }
 }
+
+/*
+ ** Sin resultados
+*/
+
+#not-found,
+#error-404-wrapper {
+    background: $primary;
+    color: $white;
+    padding: 0 0 5rem 0;
+
+    h1 {
+        margin-top: 3rem;
+    }
+}

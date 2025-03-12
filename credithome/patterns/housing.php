@@ -1,7 +1,7 @@
 <div id="viviendas">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 mt-3">
                 <h3 class="mb-0">Encuentra tu casa con nosotros,</h3>
                 <h4 class="mb-0">Algunas de nuestras propiedades en venta o alquiler.</h4>
             </div>
@@ -14,7 +14,7 @@
             <?php
                 global $paged;
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                $is_viviendas_page = (strpos($_SERVER['REQUEST_URI'], 'viviendas') !== false);
+                $is_viviendas_page = (strpos($_SERVER['REQUEST_URI'], 'vivienda') !== false);
                 $posts_number = $is_viviendas_page ? -1 : 6;
                 
                 $args = array(
@@ -37,7 +37,7 @@
                     </div>
                     <?php if (!$is_viviendas_page) : ?>
                         <div class="col-12 col-md-4 offset-md-4 my-5 text-center">
-                            <a href="<?php echo site_url('/viviendas'); ?>" class="btn btn-dark">Ver todas las viviendas</a>
+                            <a href="<?php echo site_url('/vivienda'); ?>" class="btn btn-dark">Ver todas las viviendas</a>
                         </div>
                     <?php endif; ?>
                 <?php endif; ?>

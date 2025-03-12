@@ -15525,6 +15525,21 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 }
 
 /*
+ ** Sin resultados
+*/
+#not-found,
+#error-404-wrapper {
+  background: #040404;
+  color: #FFF;
+  padding: 0 0 5rem 0;
+}
+#not-found h1, #not-found .h1,
+#error-404-wrapper h1,
+#error-404-wrapper .h1 {
+  margin-top: 3rem;
+}
+
+/*
  ** Formulario de contacto
 */
 #contact-form,
@@ -16239,15 +16254,6 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   font-size: 14px;
   font-weight: 400;
 }
-#oficinas .oficina .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#oficinas .oficina .col-md-4 {
-  display: flex;
-  justify-content: center;
-}
 #oficinas .col-10 ul {
   flex-direction: column !important;
   margin: 0;
@@ -16282,8 +16288,29 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   display: flex;
   align-items: center;
 }
-#oficinas .btn, #oficinas .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #oficinas a.button, #oficinas .woocommerce-info a.button, .woocommerce-info #oficinas a.button, #oficinas .wpcf7 input[type=submit], .wpcf7 #oficinas input[type=submit] {
+#oficinas .oficina .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#oficinas .oficina .col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+#oficinas .oficina .list-group {
+  flex-direction: column;
+  gap: 10px; /* Espacio entre botones */
+}
+#oficinas .oficina .btn, #oficinas .oficina .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #oficinas .oficina a.button, #oficinas .oficina .woocommerce-info a.button, .woocommerce-info #oficinas .oficina a.button, #oficinas .oficina .wpcf7 input[type=submit], .wpcf7 #oficinas .oficina input[type=submit] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
   margin-top: 1rem;
+  width: 100%;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
 }
 @media (max-width: 576px) {
   #oficinas {
@@ -16380,16 +16407,20 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 /*
  ** Viviendas
 */
+#archive-wrapper-viviendas {
+  background: #040404;
+}
+
 #viviendas {
   background: #040404;
 }
 #viviendas h3, #viviendas .h3 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   color: #FFF;
 }
 #viviendas h4, #viviendas .h4 {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 300;
   color: #BCA76F;
 }
