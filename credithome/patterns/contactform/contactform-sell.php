@@ -1,7 +1,7 @@
 <section id="contact-form-sell">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-xl-7">
+            <div class="col-12 col-lg-7">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-xl-5 p-0">
+            <div class="col-12 col-lg-5 p-0">
                 <img src="<?php echo site_url('/img/vender_contact_form.png'); ?>" alt="Imagen Venta" id="img-venta" class="img-fluid h-100 w-100 object-fit-cover zoom">
             </div>
         </div>

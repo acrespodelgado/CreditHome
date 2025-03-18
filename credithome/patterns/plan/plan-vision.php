@@ -1,4 +1,4 @@
-<section id="vision">
+<section id="vision" class="parent">
     <div class="container">
         <div class="row align-items-center">
             <div class="left"></div>

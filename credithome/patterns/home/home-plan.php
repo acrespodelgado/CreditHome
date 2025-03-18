@@ -1,4 +1,4 @@
-<section id="plan">
+<section id="plan" class="parent">
     <div class="left">
         <h2>Un plan para vivir</h2>
     </div>

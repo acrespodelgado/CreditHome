@@ -82,7 +82,7 @@ jQuery(document).ready(function($) {
             const idMap = {
                 '/servicios': '#servicios-home',
                 '/propiedades': '#viviendas',
-                '/reseñas': '#opiniones'
+                '/opiniones': '#opiniones'
             };
             
             const targetId = idMap[href];
@@ -152,6 +152,14 @@ jQuery(document).ready(function($) {
         });
     }
 
+    // Función para calcular el width de .left
+    function handleLeftSize() {
+        $('.parent').each(function() {
+          var alturaPadre = $(this).outerHeight();
+          $(this).find('.left').css('width', alturaPadre + 'px');
+        });
+      }
+
     // Inicializar todas las funcionalidades
     handleForms();
     handleNumberAnimations();
@@ -159,4 +167,6 @@ jQuery(document).ready(function($) {
     handleFAQs();
     handleNavbar();
     handleHamburgerMenu();
+    handleLeftSize();
+    (window).on('resize', handleLeftSize);
 });

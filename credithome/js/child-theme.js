@@ -6817,7 +6817,7 @@
 	      const idMap = {
 	        '/servicios': '#servicios-home',
 	        '/propiedades': '#viviendas',
-	        '/reseñas': '#opiniones'
+	        '/opiniones': '#opiniones'
 	      };
 	      const targetId = idMap[href];
 	      if (targetId && $(targetId).length) {
@@ -6878,6 +6878,14 @@
 	    });
 	  }
 
+	  // Función para calcular el width de .left
+	  function handleLeftSize() {
+	    $('.parent').each(function () {
+	      var alturaPadre = $(this).outerHeight();
+	      $(this).find('.left').css('width', alturaPadre + 'px');
+	    });
+	  }
+
 	  // Inicializar todas las funcionalidades
 	  handleForms();
 	  handleNumberAnimations();
@@ -6885,6 +6893,8 @@
 	  handleFAQs();
 	  handleNavbar();
 	  handleHamburgerMenu();
+	  handleLeftSize();
+	  window.on('resize', handleLeftSize);
 	});
 
 	exports.Alert = alert;

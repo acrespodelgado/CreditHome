@@ -16754,6 +16754,20 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 #contact-form-sell.black .wpcf7-form-control-wrap[data-name=your-consent] .wpcf7-list-item-label {
   color: rgba(255, 255, 255, 0.63);
 }
+@media (max-width: 767px) {
+  #contact-form .wpcf7-form,
+  #contact-form-buy .wpcf7-form,
+  #contact-form-sell .wpcf7-form {
+    position: relative;
+    padding-bottom: 5rem;
+  }
+  #contact-form .wpcf7-form .wpcf7-submit,
+  #contact-form-buy .wpcf7-form .wpcf7-submit,
+  #contact-form-sell .wpcf7-form .wpcf7-submit {
+    position: absolute;
+    bottom: 20px;
+  }
+}
 @media (max-width: 991px) {
   #contact-form .col-lg-7 .container,
   #contact-form-buy .col-lg-7 .container,
@@ -17127,6 +17141,9 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   #main-nav #main-menu li a {
     font-size: 24px;
   }
+  #main-nav .search::before {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   #main-nav .featured {
@@ -17136,6 +17153,11 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   }
   #main-nav .featured.active {
     background: #BCA76F;
+  }
+  #main-nav .search a {
+    opacity: 0;
+    position: absolute;
+    bottom: 50px;
   }
 }
 
@@ -17472,6 +17494,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 }
 #viviendas .vivienda-card .img-container img {
   border-radius: 16px;
+  max-height: 270px;
 }
 #viviendas .vivienda-card .img-container .price {
   position: absolute;
@@ -17558,6 +17581,9 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 @media (max-width: 767px) {
   #viviendas h3, #viviendas .h3 {
     margin-top: 2rem;
+  }
+  #viviendas .vivienda-card {
+    margin-bottom: 2rem !important;
   }
 }
 
@@ -17702,13 +17728,13 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   font-weight: 500;
   margin-bottom: 1rem;
 }
-#clientes .col-md-7 {
+#clientes .col-lg-7 {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#clientes .col-md-7 .blur {
+#clientes .col-lg-7 .blur {
   display: flex;
   position: absolute;
   left: -4.75rem;
@@ -17720,7 +17746,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   text-align: center;
   align-items: center;
 }
-#clientes .col-md-7 .blur img {
+#clientes .col-lg-7 .blur img {
   margin: 0 auto;
 }
 @media (max-width: 991px) {
@@ -17729,7 +17755,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   }
 }
 @media (min-width: 1200px) {
-  #clientes .col-md-7 {
+  #clientes .col-lg-7 {
     padding-left: 7rem;
   }
 }

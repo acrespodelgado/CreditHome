@@ -63,6 +63,7 @@
 
             img {
                 border-radius: 16px;
+                max-height: 270px;
             }
 
             .price {
@@ -163,6 +164,10 @@
 
         h3 {
             margin-top: 2rem;
+        }
+
+        .vivienda-card {
+            margin-bottom: 2rem !important;
         }
     }
 }

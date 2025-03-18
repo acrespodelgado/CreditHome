@@ -110,6 +110,13 @@
                 font-size: 24px;
             }
         }
+
+        .search {
+
+            &::before {
+                display: none;
+            }
+        }
     }
 
     @media (min-width: 768px) {
@@ -122,6 +129,15 @@
 
         .featured.active {
             background: $accent;
+        }
+
+        .search {
+
+            a {
+                opacity: 0;
+                position: absolute;
+                bottom: 50px;
+            }
         }
     }
 }

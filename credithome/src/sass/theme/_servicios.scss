@@ -13,7 +13,7 @@
         margin-bottom: 1rem;
     }
 
-    .col-md-7 {
+    .col-lg-7 {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -46,7 +46,7 @@
 
     @include media-breakpoint(xl) {
 
-        .col-md-7 {
+        .col-lg-7 {
             padding-left: 7rem;
         }
     }
