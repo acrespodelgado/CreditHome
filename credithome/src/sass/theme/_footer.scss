@@ -57,10 +57,28 @@
             }
 
             ul.list-group-horizontal {
-
                 a {
+                    display: inline-flex;
                     opacity: 1;
                     
+                    .fa {
+                        font-size: 24px;
+                        text-align: center;
+                        width: 48px;
+                        height: 48px;
+                        line-height: 48px;
+                        background: $grey;
+                        border-radius: 50%;
+                        display: inline-block;
+                    }
+
+                    &.background {
+                        background: $grey;
+                        padding: 4px;
+                        border-radius: 128px;
+                        font-size: 24px;
+                    }
+            
                     &:hover {
                         opacity: 0.63;
                     }

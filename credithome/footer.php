@@ -69,10 +69,10 @@ defined('ABSPATH') || exit;
                     <div class="mt-5">
                         <ul class="list-unstyled list-group list-group-horizontal d-flex align-items-center">
                             <li class="me-2">
-                                <a href="#"><img src="<?php echo site_url('/img/instagram.png'); ?>" alt="Instagram"></a>
+                                <a href="#" class="background"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             </li>
                             <li class="me-4">
-                                <a href="#"><img src="<?php echo site_url('/img/twitter.png'); ?>" alt="Twitter"></a>
+                                <a href="#" class="background"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                             </li>
                             <li>
                                 <a href="<?php echo site_url('/'); ?>">

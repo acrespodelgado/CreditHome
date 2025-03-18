@@ -1,0 +1,19 @@
+#wrapper-politica {
+    background: $black;
+    color: $white;
+
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        color: $accent;
+        text-transform: uppercase;
+        margin: 3rem 0;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin: 1.5rem 0;
+    }
+}

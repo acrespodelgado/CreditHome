@@ -3,9 +3,9 @@
 */
 
 #servicios-home {
+    position: relative;
 
     .shadow {
-        position: relative;
         
         &::after {
             content: '';
@@ -26,41 +26,41 @@
             height: auto;
             display: block;
         }
+    }
 
-        .servicio {
-            position: relative;
-            overflow: hidden;
+    .servicio {
+        position: relative;
+        overflow: hidden;
 
-            .icono {
-                width: 100%;
-                height: 120px;
-                padding: 10px 15px;
-                position: absolute;
-                bottom: 20%;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                z-index: 2;
+        .icono {
+            width: 100%;
+            height: 120px;
+            padding: 10px 15px;
+            position: absolute;
+            bottom: 20%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 2;
 
-                .blur {
-                    margin: 0 auto;
-                    border: 1px solid $transparent-white;
-                    border-radius: 16px;
-                    padding: 10px 25px;
+            .blur {
+                margin: 0 auto;
+                border: 1px solid $transparent-white;
+                border-radius: 16px;
+                padding: 10px 25px;
 
-                    img {
-                        width: 50px;
-                        height: 50px;
-                    }
+                img {
+                    width: 50px;
+                    height: 50px;
                 }
+            }
 
-                h5 {
-                    font-size: 32px;
-                    font-weight: 400;
-                    color: $white;
-                    margin-top: 2rem;
-                    text-align: center;
-                }
+            h5 {
+                font-size: 32px;
+                font-weight: 400;
+                color: $white;
+                margin-top: 2rem;
+                text-align: center;
             }
         }
     }

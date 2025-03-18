@@ -16837,7 +16837,24 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   border-bottom: 1px solid #FFF;
 }
 #wrapper-footer footer .row ul.list-group-horizontal a {
+  display: inline-flex;
   opacity: 1;
+}
+#wrapper-footer footer .row ul.list-group-horizontal a .fa {
+  font-size: 24px;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  background: #171717;
+  border-radius: 50%;
+  display: inline-block;
+}
+#wrapper-footer footer .row ul.list-group-horizontal a.background {
+  background: #171717;
+  padding: 4px;
+  border-radius: 128px;
+  font-size: 24px;
 }
 #wrapper-footer footer .row ul.list-group-horizontal a:hover {
   opacity: 0.63;
@@ -16860,7 +16877,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 /*
  ** Servicios Home
 */
-#servicios-home .shadow {
+#servicios-home {
   position: relative;
 }
 #servicios-home .shadow::after {
@@ -16878,11 +16895,11 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   height: auto;
   display: block;
 }
-#servicios-home .shadow .servicio {
+#servicios-home .servicio {
   position: relative;
   overflow: hidden;
 }
-#servicios-home .shadow .servicio .icono {
+#servicios-home .servicio .icono {
   width: 100%;
   height: 120px;
   padding: 10px 15px;
@@ -16893,17 +16910,17 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   flex-direction: column;
   z-index: 2;
 }
-#servicios-home .shadow .servicio .icono .blur {
+#servicios-home .servicio .icono .blur {
   margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.63);
   border-radius: 16px;
   padding: 10px 25px;
 }
-#servicios-home .shadow .servicio .icono .blur img {
+#servicios-home .servicio .icono .blur img {
   width: 50px;
   height: 50px;
 }
-#servicios-home .shadow .servicio .icono h5, #servicios-home .shadow .servicio .icono .h5 {
+#servicios-home .servicio .icono h5, #servicios-home .servicio .icono .h5 {
   font-size: 32px;
   font-weight: 400;
   color: #FFF;
@@ -17364,14 +17381,6 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 /*
  ** Sliders
 */
-.n2-ss-layer .cover {
-  display: block;
-  width: 100%;
-  height: 100vh;
-  background: black;
-  opacity: 0.61;
-  z-index: 2;
-}
 .n2-ss-layer h1, .n2-ss-layer .h1 {
   font-size: 64px;
   font-weight: 400;
@@ -17419,7 +17428,7 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 }
 @media (max-width: 576px) {
   .n2-ss-layer .home-slider {
-    margin-top: 200px;
+    margin-top: 5rem !important;
   }
   .n2-ss-layer .home-slider h2, .n2-ss-layer .home-slider .h2 {
     font-size: 21px;
@@ -17436,6 +17445,10 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   }
   .n2-ss-layer .nums a {
     padding: 5px 15px;
+    display: none;
+  }
+  .n2-ss-layer .nums p {
+    max-width: none;
   }
 }
 
@@ -17968,6 +17981,24 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 }
 #contacto-oficinas .separator {
   margin: 0 auto;
+}
+
+#wrapper-politica {
+  background: #040404;
+  color: #FFF;
+}
+#wrapper-politica h1, #wrapper-politica .h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #BCA76F;
+  text-transform: uppercase;
+  margin: 3rem 0;
+}
+#wrapper-politica h2, #wrapper-politica .h2 {
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
 }
 
 /*# sourceMappingURL=child-theme.css.map */

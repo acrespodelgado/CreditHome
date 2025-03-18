@@ -1,8 +1,10 @@
 <section id="servicios-home">
     <div class="container-fluid">
-        <div class="row shadow">
+        <div class="row">
             <div class="col-12 col-sm-6 col-xl-3 p-0 servicio">
-                <img src="<?php echo site_url('/img/servicios_home_1.png'); ?>" alt="Servicios Asesoría Inmobiliaria" class="zoom" />
+                <div class="shadow">
+                    <img src="<?php echo site_url('/img/servicios_home_1.png'); ?>" alt="Servicios Asesoría Inmobiliaria" class="zoom" />
+                </div>
                 <div class="icono">
                     <div class="blur">
                         <img src="<?php echo site_url('/img/icono_inmobiliaria.png'); ?>" alt="Icono Servicios Asesoría Inmobiliaria" />
@@ -11,7 +13,9 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-3 p-0 servicio">
-                <img src="<?php echo site_url('/img/servicios_home_2.png'); ?>" alt="Servicios Asesoría Financiera" class="zoom" />
+                <div class="shadow">
+                    <img src="<?php echo site_url('/img/servicios_home_2.png'); ?>" alt="Servicios Asesoría Financiera" class="zoom" />
+                </div>
                 <div class="icono">
                     <div class="blur">
                         <img src="<?php echo site_url('/img/icono_financiera.png'); ?>" alt="Icono Servicios Asesoría Financiera" />
@@ -20,7 +24,9 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-3 p-0 servicio">
-                <img src="<?php echo site_url('/img/servicios_home_3.png'); ?>" alt="Servicios Asesoramiento Legal" class="zoom" />
+                <div class="shadow">
+                    <img src="<?php echo site_url('/img/servicios_home_3.png'); ?>" alt="Servicios Asesoramiento Legal" class="zoom" />
+                </div>
                 <div class="icono">
                     <div class="blur">
                         <img src="<?php echo site_url('/img/icono_asesoramiento.png'); ?>" alt="Icono Servicios Asesoría Inmobiliaria" />
@@ -29,7 +35,9 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-3 p-0 servicio">
-                <img src="<?php echo site_url('/img/servicios_home_4.png'); ?>" alt="Servicios Gestión Integral" class="zoom" />
+                <div class="shadow">
+                    <img src="<?php echo site_url('/img/servicios_home_4.png'); ?>" alt="Servicios Gestión Integral" class="zoom" />
+                </div>
                 <div class="icono">
                     <div class="blur">
                         <img src="<?php echo site_url('/img/icono_gestion.png'); ?>" alt="Icono Servicios Gestión" />
