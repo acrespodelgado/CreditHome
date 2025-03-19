@@ -62,8 +62,11 @@
             }
 
             img {
+                display: block;
+                height: 270px;
+                width: 100%;
+                object-fit: cover;
                 border-radius: 16px;
-                max-height: 270px;
             }
 
             .price {
@@ -117,6 +120,7 @@
                         background: $grey;
                         border: 1px solid $transparent-white;
                         border-radius: 12px;
+
                         img {
                             width: 24px; // Asegura que todos los iconos tengan el mismo tamaño
                             height: 24px;
@@ -212,8 +216,9 @@
                     background: $grey;
                     border: 1px solid $transparent-white;
                     border-radius: 12px;
+
                     img {
-                        width: 24px; // Asegura que todos los iconos tengan el mismo tamaño
+                        width: 24px;
                         height: 24px;
                         object-fit: contain;
                     }
@@ -276,6 +281,14 @@
 
             img {
                 border-radius: 16px;
+            }
+        }
+
+        .img-wrapper {
+            width: 100%;
+
+            img {
+                width: 100%;
             }
         }
 

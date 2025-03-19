@@ -17506,8 +17506,12 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
   color: #FFF;
 }
 #viviendas .vivienda-card .img-container img {
+  display: block;
+  height: 270px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   border-radius: 16px;
-  max-height: 270px;
 }
 #viviendas .vivienda-card .img-container .price {
   position: absolute;
@@ -17691,6 +17695,12 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 }
 #single-wrapper-vivienda .vivienda-single .data-container img {
   border-radius: 16px;
+}
+#single-wrapper-vivienda .vivienda-single .img-wrapper {
+  width: 100%;
+}
+#single-wrapper-vivienda .vivienda-single .img-wrapper img {
+  width: 100%;
 }
 #single-wrapper-vivienda .vivienda-single .btn-dark {
   background: #171717;

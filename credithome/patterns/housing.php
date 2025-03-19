@@ -42,10 +42,12 @@
                     <?php endif; ?>
                 <?php endif; ?>
                 <?php
+                /*
                     understrap_pagination( [
                         'current' => $paged,
                         'total'   => $query->max_num_pages,
                     ]);
+                */
                 ?>
         </div>
     </div>
