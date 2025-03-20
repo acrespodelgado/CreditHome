@@ -17451,6 +17451,24 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
     max-width: none;
   }
 }
+@media (max-width: 389px) {
+  .n2-ss-layer .n2-ss-layer .home-slider h1, .n2-ss-layer .n2-ss-layer .home-slider .h1 {
+    font-size: 34px;
+  }
+  .n2-ss-layer .n2-ss-layer .home-slider h2, .n2-ss-layer .n2-ss-layer .home-slider .h2 {
+    font-size: 18px;
+  }
+  .n2-ss-layer .n2-ss-layer .home-slider p {
+    font-size: 16px;
+  }
+  .n2-ss-layer .nums span {
+    font-size: 34px;
+  }
+  .n2-ss-layer .nums p {
+    font-size: 12px;
+    margin: 1rem 0;
+  }
+}
 
 /*
  ** Viviendas

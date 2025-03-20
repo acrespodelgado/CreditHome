@@ -106,3 +106,13 @@ function register_my_menus() {
     );
 }
 add_action('init', 'register_my_menus');
+
+/**
+ * Ejecutar Shortcodes en menú
+ */
+
+function ejecutar_shortcode_menu($item_output, $item, $args) {
+    // Ejecutar shortcodes en el contenido del menú
+    return do_shortcode($item_output);
+}
+add_filter('walker_nav_menu_start_el', 'ejecutar_shortcode_menu', 10, 3);

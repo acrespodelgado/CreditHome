@@ -67,12 +67,18 @@ defined('ABSPATH') || exit;
                     <h2>CREDIT HOME REAL ESTATE & FINANCE</h2>
                     <p>Profesionalismo y dedicación para que tu visión se convierta en realidad.</p>
                     <div class="mt-5">
-                        <ul class="list-unstyled list-group list-group-horizontal d-flex align-items-center">
+                        <ul class="list-unstyled list-group list-group-horizontal d-flex align-items-center text-center">
                             <li class="me-2">
-                                <a href="#" class="background"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/credithome.sevilla/" class="background" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <p>Sevilla</p>
+                            </li>
+                            <li class="me-2">
+                                <a href="https://www.instagram.com/credithome.banus/" class="background" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <p>Banús</p>
                             </li>
                             <li class="me-4">
-                                <a href="#" class="background"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/credithomesevilla/" class="background" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                <p>Sevilla</p>
                             </li>
                             <li>
                                 <a href="<?php echo site_url('/'); ?>">

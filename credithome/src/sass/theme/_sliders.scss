@@ -97,4 +97,37 @@
             }
         }
     }
+
+    @media (max-width: 389px) {
+
+        .n2-ss-layer {
+
+            .home-slider {
+
+                h1 {
+                    font-size: 34px;
+                }
+
+                h2 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .nums {
+
+            span {
+                font-size: 34px;
+            }
+
+            p {
+                font-size: 12px;
+                margin: 1rem 0;
+            }
+        }
+    }
 }

@@ -1,24 +1,28 @@
 <?php
     $faqs = [
         [
-            'pregunta' => '¿Cuánto tiempo puedo quedarme?',
-            'respuesta' => 'Ubicado en la prestigiosa urbanización de Marbesa esta impresionante villa de 751 m² se ofrece como una oportunidad única para aquellos que buscan el equilibrio perfecto entre lujo, confort y privacidad.'
+            'pregunta' => '¿Qué gastos debo asumir para llevar a cabo la compraventa?',
+            'respuesta' => 'El coste de compraventa incluye la notaría, la inscripción registral, la gestoría, el IVA o el ITP, dependiendo de si se trata de una vivienda nueva o de segunda mano.'
         ],
         [
-            'pregunta' => '¿Se puede alquilar entre varias personas?',
-            'respuesta' => 'Ubicado en la prestigiosa urbanización de Marbesa esta impresionante villa de 751 m² se ofrece como una oportunidad única para aquellos que buscan el equilibrio perfecto entre lujo, confort y privacidad.'
+            'pregunta' => '¿De cuánto tiempo dispongo para firmar la hipoteca una vez que la tengo aprobada?',
+            'respuesta' => 'Una vez que la entidad financiera ha aprobado la operación, elegiremos la notaría para agendar el día de la firma. Debes tener en cuenta que, por ley, una vez firmada la FEIN (documento vinculante que contiene las condiciones de la hipoteca) y sus anexos, dispondrás de 10 días naturales para poder reflexionar y revisar las condiciones de la hipoteca, antes de la firma ante notario.'
         ],
         [
-            'pregunta' => '¿Qué pasa si se rompe algo en mi vivienda?',
-            'respuesta' => 'Ubicado en la prestigiosa urbanización de Marbesa esta impresionante villa de 751 m² se ofrece como una oportunidad única para aquellos que buscan el equilibrio perfecto entre lujo, confort y privacidad.'
+            'pregunta' => '¿Qué pasos importantes debo dar para comprar una vivienda? ',
+            'respuesta' => 'Después de reservar tu vivienda, debes solicitar una nota simple. Es el documento en el que se encuentra toda la información relacionada con el inmueble, incluido si tiene cargas o deudas. Lo siguiente es firmar un contrato de arras. En la firma se entrega una paga y señal que suele ser del 10 % y que luego se descontará del precio final de compraventa. En este contrato se detallan las obligaciones de cada una de las partes y las consecuencias en caso de incumplimiento. El siguiente paso es buscar financiación, si la necesitas.'
         ],
         [
-            'pregunta' => '¿Todas las viviendas tienen aparcamientos propios?',
-            'respuesta' => 'Ubicado en la prestigiosa urbanización de Marbesa esta impresionante villa de 751 m² se ofrece como una oportunidad única para aquellos que buscan el equilibrio perfecto entre lujo, confort y privacidad.'
+            'pregunta' => '¿Cuánto debería pagar de hipoteca al mes?',
+            'respuesta' => 'La respuesta a esta cuestión depende del precio de la vivienda y del importe de la hipoteca, así como del plazo de contratación del préstamo. Para no poner en riesgo tu salud financiera, te aconsejamos que hagas una estimación de tus ingresos menos los gastos mensuales de los titulares que compraréis el nuevo hogar. En éste cálculo los costes de la hipoteca no deben superar el 35 – 40 %.'
         ],
         [
-            'pregunta' => '¿Qué tan lejos está el centro de mi vivienda?',
-            'respuesta' => 'Ubicado en la prestigiosa urbanización de Marbesa esta impresionante villa de 751 m² se ofrece como una oportunidad única para aquellos que buscan el equilibrio perfecto entre lujo, confort y privacidad.'
+            'pregunta' => '¿Puedo vender mi VPO?',
+            'respuesta' => 'Sí es posible vender un piso de protección oficial, normalmente, se puede vender una VPO pasados 10 o 30 años (el plazo tras el cual el piso puede convertirse en una vivienda libre). No obstante también se podría vender antes de ese tiempo, aunque siga protegida. En este caso, habría que cumplir unas condiciones específicas o pedir la descalificación voluntaria.'
+        ],
+        [
+            'pregunta' => '¿Qué gastos tengo si vendo mi vivienda?',
+            'respuesta' => 'A grandes rasgos, quien vende su vivienda debe pagar la plusvalía de Hacienda (IRPF), el impuesto o plusvalía municipal, la cancelación de la hipoteca (si existe una carga sobre la vivienda) y los gastos de notaría.'
         ]
     ];
 ?>
