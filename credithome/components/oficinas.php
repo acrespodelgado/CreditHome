@@ -9,16 +9,6 @@ $oficinas = [
         'enlace' => 'https://maps.app.goo.gl/gtv47xrss3tU14Sc6'
     ],
     [
-        'titulo' => 'Bormujos',
-        'direccion' => 'Calle Perú, 49 Edif. Corona Center, planta baja mod. 11 de Bormujos (Sevilla)',
-        'enlace' => 'https://maps.app.goo.gl/gmcwyzF4bTuwMSZa6'
-    ],
-    [
-        'titulo' => 'Dos Hermanas',
-        'direccion' => 'Av. Gabriel Miró, 3 Edif. Wertice, planta 5ª mod. 8B de Dos Hermanas (Sevilla)',
-        'enlace' => 'https://maps.app.goo.gl/7YAGqBG8FjB4Lwk28'
-    ],
-    [
         'titulo' => 'Puerto Banús, Marbella',
         'direccion' => 'Av. de las Naciones Unidas C.C. Cristamar 29660 Puerto Banús (Marbella)',
         'enlace' => 'https://maps.app.goo.gl/Nif6LsQMARmUZsQo7'
@@ -27,6 +17,16 @@ $oficinas = [
         'titulo' => 'Madrid',
         'direccion' => 'Calle Ayala 4, 28001. Madrid',
         'enlace' => 'https://maps.app.goo.gl/nsJNTtoDDdNE2yi59'
+    ],
+    [
+        'titulo' => 'Bormujos',
+        'direccion' => 'Calle Perú, 49 Edif. Corona Center, planta baja mod. 11 de Bormujos (Sevilla)',
+        'enlace' => 'https://maps.app.goo.gl/gmcwyzF4bTuwMSZa6'
+    ],
+    [
+        'titulo' => 'Dos Hermanas',
+        'direccion' => 'Av. Gabriel Miró, 3 Edif. Wertice, planta 5ª mod. 8B de Dos Hermanas (Sevilla)',
+        'enlace' => 'https://maps.app.goo.gl/7YAGqBG8FjB4Lwk28'
     ]
 ];
 
