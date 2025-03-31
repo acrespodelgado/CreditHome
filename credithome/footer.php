@@ -25,7 +25,7 @@ defined('ABSPATH') || exit;
                     </div>
                     <div class="mb-5">
                         <h3>Teléfono</h3>
-                        <a href="tel:+349554596951">(+34) 955 45 96 951</a>
+                        <a href="tel:+34955459695">(+34) 955 45 96 95</a>
                     </div>
                     <div class="mb-5">
                         <h3>WhatsApp</h3>
@@ -77,7 +77,7 @@ defined('ABSPATH') || exit;
                                 <p>Banús</p>
                             </li>
                             <li class="me-4">
-                                <a href="https://www.facebook.com/credithomesevilla/" class="background" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=61573033941708" class="background" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                                 <p>Sevilla</p>
                             </li>
                             <li>
