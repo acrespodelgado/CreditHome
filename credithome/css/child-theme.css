@@ -17719,6 +17719,8 @@ a.btn:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .
 }
 #single-wrapper-vivienda .vivienda-single .img-wrapper img {
   width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 #single-wrapper-vivienda .vivienda-single .btn-dark {
   background: #171717;

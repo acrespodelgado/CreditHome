@@ -168,5 +168,4 @@ jQuery(document).ready(function($) {
     handleNavbar();
     handleHamburgerMenu();
     handleLeftSize();
-    (window).on('resize', handleLeftSize);
 });

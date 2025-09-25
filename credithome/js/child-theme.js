@@ -6894,7 +6894,6 @@
 	  handleNavbar();
 	  handleHamburgerMenu();
 	  handleLeftSize();
-	  window.on('resize', handleLeftSize);
 	});
 
 	exports.Alert = alert;
